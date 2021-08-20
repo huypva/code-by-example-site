@@ -4,7 +4,7 @@ longtitle:        Code by Example
 author:           huypva
 email:            huypva@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  Code by Example
 
 version:          1.0
 gitbook_version:  3.2.3

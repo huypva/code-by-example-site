@@ -24,7 +24,7 @@
                 {% else %}
                 <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
                 {% endif %}
-                    <a href="{{site.baseurl}}{{post.url}}abc">
+                    <a href="{{site.baseurl}}{{post.url}}">
                         {{ post.title | escape }}
                     </a>
                     {% if site.toc.enabled %}
@@ -38,7 +38,7 @@
             <li class="divider"></li>
 
             <li>
-                <a href="" target="blank" class="gitbook-link">
+                <a href="{{site.baseurl}}/aboutme" class="gitbook-link">
                     About me!
                 </a>
             </li>

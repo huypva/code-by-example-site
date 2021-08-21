@@ -4,7 +4,7 @@ Learning code by example
 
 ## Thanks
 
-This site used theme by [Jekyll themes](https://github.com/sighingnow/jekyll-gitbook).
+This site used theme by [Jekyll gitbook](https://github.com/sighingnow/jekyll-gitbook).
 
 ## License
 

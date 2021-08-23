@@ -37,6 +37,12 @@
                         <i class="fa fa-angle-right"></i>
                     </a>
                 {% endif %}
+
+                {% if page.source %}
+                    <p class="next">
+                        Source code ở <a href="{{page.source}}">đây</a>.
+                    </p>
+                {% endif %}
             </div>
 
             <script>

@@ -4,6 +4,7 @@ author: HuyPVA
 date: 2021-08-22
 category: java
 layout: post
+source: https://github.com/huypva/string-pool-example
 ---
 
 `String` trong Java được lưu trữ như sau

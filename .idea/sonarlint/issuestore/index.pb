@@ -21,8 +21,6 @@ $gitbook/rouge-highlight-colorful.css,3/7/37b2cfed3ebfe1169ba8da6f2f30c7e657aa8
 gitbook/theme.js,5/2/523ad01f95272b96982c5678899571a20dce7a55
 A
 gitbook/style.css,f/e/fe8b7ca1ab50423b16d7f1482fad8a6e8f34e9c9
-E
-_includes/search.html,3/b/3b29b8e5f5f3eb2b3dc00ae2177266f751a7821f
 P
  _includes/metadata-post.json.tpl,f/6/f6ee4b09b4431dacd27ce770ab3249a1e7021602
 K
@@ -31,14 +29,8 @@ C
 _includes/head.html,c/5/c58923d48aa9504a82e1a3191cf50bb8c51ad4de
 P
  _includes/metadata-home.json.tpl,3/5/353ecf08d863d8429a2951f22fa792882f7c2342
-E
-_includes/footer.html,7/b/7bafeea8911e2ce671479ece265a20c5eb026da8
-C
-_includes/body.html,1/d/1db491f44f0c97228755ff1e31a551655a5fc3c1
 8
 404.html,1/2/12bf52c5b60772bbf201ffb05d6bb178c1bf9a28
-B
-_layouts/post.html,e/7/e767dacdd408265f818281195cc74a31191ab7cd
 8
 index.md,b/8/b8d322cca13b7303167b216a3efe71db4e1687a1
 J

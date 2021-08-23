@@ -24,6 +24,12 @@
 
                         {{ content }}
                     </section>
+
+                    {% if page.source %}
+                    <p class="normal">
+                        Source code ở <a href="{{page.source}}">đây</a>.
+                    </p>
+                    {% endif %}
                 </div>
 
                  <!-- {%- include search.html -%} -->

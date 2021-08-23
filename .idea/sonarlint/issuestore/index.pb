@@ -25,8 +25,6 @@ P
  _includes/metadata-post.json.tpl,f/6/f6ee4b09b4431dacd27ce770ab3249a1e7021602
 K
 _includes/metadata.json.tpl,6/6/66a447cf3a2754daf7879d6576e9e1f4830f48ae
-C
-_includes/head.html,c/5/c58923d48aa9504a82e1a3191cf50bb8c51ad4de
 P
  _includes/metadata-home.json.tpl,3/5/353ecf08d863d8429a2951f22fa792882f7c2342
 8

@@ -18,7 +18,7 @@
 
             {% assign reversed_posts = site.posts | reverse %}
 
-            {% for post in navigation %}
+            {% for post in reversed_posts %}
                 {% if page.url == post.url %}
                 <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
                 {% else %}

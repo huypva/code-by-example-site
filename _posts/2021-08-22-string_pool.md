@@ -12,7 +12,7 @@ source: https://github.com/huypva/string-pool-example
 ![StringPool](../assets/images/string_pool.png)
 
 - Tạo `String` bằng `String str1 = "abc"`
-JMV sẽ kiểm tra và tạo mới một object nếu chưa có trong String pool.
+    - JMV sẽ kiểm tra và tạo mới một object nếu chưa có trong String pool.
 
 ```java
 String str1 = "abc";
@@ -27,11 +27,11 @@ $ java -jar string-pool/target/string-pool-0.0.1-SNAPSHOT.jar
 Compare str1==str2: true
 ```
 
->> return true, str1 và str2 tham khảo đến 1 object trong String constant pool.
+> return true, str1 và str2 tham khảo đến 1 object trong String constant pool.
 
 - Tạo `String` bằng `String str3 = new String("abc")`
-+ Tạo một object trong String pool
-+ Tạo thêm một object trong vùng nhớ Heap, và tham khảo đến object trong String pool
+    - Tạo một object trong String pool
+    - Tạo thêm một object trong vùng nhớ Heap, và tham khảo đến object trong String pool
 
 ```java
 String str3 = new String("abc");
@@ -45,7 +45,7 @@ $ java -jar string-pool/target/string-pool-0.0.1-SNAPSHOT.jar
 Compare str3==str4: false
 ```
 
->> return false, bởi vì str3 tham khảo đến object ngoài pool(non-pool).
+> return false, bởi vì str3 tham khảo đến object ngoài pool(non-pool).
 
 - So sánh giá trị 2 biến `String` bằng toán tử `equal`
 

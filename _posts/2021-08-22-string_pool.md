@@ -6,7 +6,7 @@ category: java
 layout: post
 ---
 
-`String` trong Java được 
+`String` trong Java được lưu trữ như sau
 
 ![StringPool](../assets/images/string_pool.png)
 

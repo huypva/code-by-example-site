@@ -4,7 +4,7 @@ author: HuyPVA
 date: 2021-08-24
 category: java
 layout: post
-source: https://github.com/huypva/string-pool-example
+source: https://github.com/huypva/initialization-block-example
 ---
 
 - *Initialization block* là khối code không thuộc method nào, được thực thi trước contructor của class. Mỗi lần khởi tạo đối tượng sẽ được gọi 1 lần.

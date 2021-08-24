@@ -27,9 +27,7 @@ public class InitializationBlockExample {
 }
 ``` 
 
-```shell
-$ mvn clean package
-$ java -jar string-pool/target/string-pool-0.0.1-SNAPSHOT.jar
+```text
 Initialization block 1
 Contructor 1
 Initialization block 1
@@ -59,9 +57,7 @@ public class InitializationBlockExample {
 }
 ``` 
 
-```shell
-$ mvn clean package
-$ java -jar string-pool/target/string-pool-0.0.1-SNAPSHOT.jar
+```text
 Initialization block 1
 Initialization block 2
 Contructor 1
@@ -93,9 +89,7 @@ public class InitializationBlockExample {
 }
 ```
 
-```shell
-$ mvn clean package
-$ java -jar string-pool/target/string-pool-0.0.1-SNAPSHOT.jar
+```text
 Static initialization block 1
 Initialization block 1
 Contructor 1
@@ -103,4 +97,4 @@ Initialization block 1
 Contructor 1
 ```` 
 
->> Thứ tự: Static initialization block -> Super initialization block -> Contructor
+> Thứ tự: Static initialization block -> Super initialization block -> Contructor

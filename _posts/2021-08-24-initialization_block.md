@@ -7,7 +7,7 @@ layout: post
 source: https://github.com/huypva/string-pool-example
 ---
 
-*Initialization block* là khối code không thuộc method nào, được thực thi trước contructor của class. Mỗi lần khởi tạo đối tượng sẽ được gọi 1 lần.
+- *Initialization block* là khối code không thuộc method nào, được thực thi trước contructor của class. Mỗi lần khởi tạo đối tượng sẽ được gọi 1 lần.
 
 ```java
 public class InitializationBlockExample {
@@ -36,7 +36,7 @@ Initialization block 1
 Contructor 1
 ```
 
-> Nếu có 2 block thì thứ tự thực thi theo thứ tự xuất hiện (thứ tự code từ trên xuống).
+>> Nếu có 2 block thì thứ tự thực thi theo thứ tự xuất hiện (thứ tự code từ trên xuống).
 
 ```java
 public class InitializationBlockExample {
@@ -67,7 +67,7 @@ Initialization block 2
 Contructor 1
 ```
 
-*Static initialization block* tương tự như sử dụng static, được thực thi trước initialization block. Và chỉ được thực thi 1 lần duy nhất.
+- *Static initialization block* tương tự như sử dụng static, được thực thi trước initialization block. Và chỉ được thực thi 1 lần duy nhất.
 
 ```java
 public class InitializationBlockExample {
@@ -103,4 +103,4 @@ Initialization block 1
 Contructor 1
 ```` 
 
-> Thứ tự: Static initialization block -> Super initialization block -> Contructor
+>> Thứ tự: Static initialization block -> Super initialization block -> Contructor

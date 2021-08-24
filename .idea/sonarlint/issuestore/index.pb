@@ -1,8 +1,6 @@
 
 Y
 )gitbook/gitbook-plugin-sharing/buttons.js,2/2/22f31082896d6ec42490965dc14643122b327842
-7
-Gemfile,d/e/de3150c01c3a946a6168173c4116741379fe3579
 X
 (gitbook/gitbook-plugin-search/search.css,b/5/b54fd05e16180d68210acdaefac1b98a2b8ae25f
 W
@@ -15,8 +13,6 @@ B
 gitbook/gitbook.js,1/f/1f00e2b0630bc0423eb3b14c3d58c99faa97a994
 T
 $gitbook/rouge-highlight-colorful.css,3/7/37b2cfed3ebfe1169ba8da6f2f30c7e657aa84e3
-7
-LICENSE,0/3/0398ccd0f49298b10a3d76a47800d2ebecd49859
 @
 gitbook/theme.js,5/2/523ad01f95272b96982c5678899571a20dce7a55
 A
@@ -31,8 +27,6 @@ P
 404.html,1/2/12bf52c5b60772bbf201ffb05d6bb178c1bf9a28
 8
 index.md,b/8/b8d322cca13b7303167b216a3efe71db4e1687a1
-;
-_config.yml,c/d/cd089ae45ce870c45e434019e8f1ed4f066cd425
 E
 _includes/search.html,3/b/3b29b8e5f5f3eb2b3dc00ae2177266f751a7821f
 C

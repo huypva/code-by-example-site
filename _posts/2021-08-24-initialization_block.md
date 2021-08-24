@@ -1,5 +1,5 @@
 ---
-title: String pool in Java
+title: Initialization Block
 author: HuyPVA
 date: 2021-08-24
 category: java

@@ -34,7 +34,7 @@ Initialization block 1
 Contructor 1
 ```
 
->> Nếu có 2 block thì thứ tự thực thi theo thứ tự xuất hiện (thứ tự code từ trên xuống).
+    > Nếu có 2 block thì thứ tự thực thi theo thứ tự xuất hiện (thứ tự code từ trên xuống).
 
 ```java
 public class InitializationBlockExample {
@@ -97,4 +97,4 @@ Initialization block 1
 Contructor 1
 ```` 
 
-> Thứ tự: Static initialization block -> Super initialization block -> Contructor
+    > Thứ tự: Static initialization block -> Super initialization block -> Contructor

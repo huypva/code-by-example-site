@@ -1,5 +1,5 @@
 ---
-title: Initialization Block
+title: Initialization block
 author: HuyPVA
 date: 2021-08-24
 category: java

@@ -1,5 +1,5 @@
 ---
-title: String pool in Java
+title: String pool
 author: HuyPVA
 date: 2021-08-22
 category: java

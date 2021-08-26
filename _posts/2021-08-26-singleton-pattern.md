@@ -7,7 +7,9 @@ layout: post
 source: https://github.com/huypva/singleton--pattern-example
 ---
 
-![Map](../assets/images/singleton.png)
+<div align="center">
+    <img src="./assets/images/singleton.png"/>
+</div>
 
 - *Singleton * là pattern tạo ra một instance duy nhất của một class
 

@@ -1,5 +1,5 @@
 ---
-title: Singleton
+title: Singleton pattern
 author: HuyPVA
 date: 2021-08-26
 category: java

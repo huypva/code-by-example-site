@@ -12,7 +12,7 @@ source: https://github.com/huypva/singleton--pattern-example
     ![Singleton](../assets/images/map.png)
 </div>
 
-- *Singleton * là pattern tạo ra một instance duy nhất của một class
+- *Singleton* là pattern tạo ra một instance duy nhất của một class
 
 ```java
 public class Singleton {

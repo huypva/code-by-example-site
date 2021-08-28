@@ -16,8 +16,8 @@ source: https://github.com/huypva/auto-configuration-springboot-example
 - Thêm configuration trong file application.yml
 ```yml
 my-config:
-  id: 1
-  value: my value
+    id: 1
+    value: my value
 ``` 
 
 - Tạo class tương ứng với configuration
@@ -32,6 +32,7 @@ public class MyConf {
 ``` 
 
 - Sử dụng annotation @Configuration, @ConfigurationProperties và các hàm setter để *SpringBoot* biết và tự động tạo bean tương ứng 
+
 ```java
 @Setter
 @Configuration

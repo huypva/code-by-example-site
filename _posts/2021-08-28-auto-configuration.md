@@ -8,10 +8,10 @@ source: https://github.com/huypva/auto-configuration-springboot-example
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot.png"/>
+    <img src="../assets/images/spring_boot_icon.png"/>
 </div>
 
-> Tự tạo lớp configuration trong spring boot
+> Tạo lớp configuration và tự động load từ file trong Spring Boot
 
 - Thêm configuration trong file application.yml
 ```yml

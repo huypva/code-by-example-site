@@ -51,3 +51,10 @@ public class MyConf {
   System.out.println("Id: " + myConf.getId());
   System.out.println("Value: " + myConf.getValue());
 ```
+
+Output:
+
+```
+Id: 1
+Value: my value
+```

@@ -29,7 +29,7 @@ public class Singleton {
 }
 ``` 
 
-- *Lazy singleton* để tạo ra instance khi được gọi
+- *Lazy singleton* tạo instance khi được sử dụng
 
 ```java
 public class LazySingleton {
@@ -50,7 +50,7 @@ public class LazySingleton {
 }
 ``` 
 
-- *Double checked singleton* tạo singleton trong môi trường mutilthread
+- *Double checked singleton* đảm bảo tạo singleton trong môi trường mutilthread
 
 ```java
 public class DoubleCheckedSingleton {

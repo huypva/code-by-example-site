@@ -50,4 +50,4 @@ public class MyConf {
   ...
   System.out.println("Id: " + myConf.getId());
   System.out.println("Value: " + myConf.getValue());
-```` 
+```

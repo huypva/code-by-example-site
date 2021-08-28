@@ -11,7 +11,7 @@ source: https://github.com/huypva/auto-configuration-springboot-example
     <img src="../assets/images/spring_boot.png"/>
 </div>
 
-- Tự tạo lớp configuration 
+> Tự tạo lớp configuration trong spring boot
 
 - Thêm configuration trong file application.yml
 ```yml

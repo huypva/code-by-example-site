@@ -1,59 +1,107 @@
 ---
-title: Auto-Configuration
+title: Tracing in Grpc API
 author: HuyPVA
 date: 2021-08-30
 category: springboot
 layout: post
-source: https://github.com/huypva/auto-configuration-springboot-example
+source: https://github.com/huypva/grpc-tracing-example
 ---
 
 <div align="center">
     <img src="../assets/images/spring_boot_icon.png"/>
 </div>
 
-> Tạo lớp configuration và tự động load từ file trong Spring Boot
+Hướng dẫn tích hợp OpenTracing trong Grpc API service 
 
-- Thêm configuration trong file application.yml
-```yml
-my-config:
-    id: 1
-    value: my value
+Thư viện sử dụng:
+- [grpc-spring-boot-starter](https://github.com/yidongnan/grpc-spring-boot-starter) - Spring Boot starter module for gRPC framework
+- [opentracing-contrib/java-spring-cloud](https://github.com/opentracing-contrib/java-spring-cloud) - OpenTracing instrumentation for Spring Boot
+- [opentracing-contrib/java-grpc](https://github.com/opentracing-contrib/java-grpc) - OpenTracing instrumentation for gRPC
+
+## Server
+
+- Cấu hình OpenTracing trong application.properties
+```properties
+opentracing.jaeger.service-name=...
+opentracing.jaeger.enabled=true
+opentracing.jaeger.udp-sender.host=localhost
+opentracing.jaeger.udp-sender.port=6831
+opentracing.jaeger.log-spans=true
+opentracing.jaeger.enable-b3-propagation=false
+opentracing.jaeger.probabilistic-sampler.sampling-rate=1.0
 ``` 
 
-- Tạo class tương ứng với configuration
+- Tạo grpc Controler
 
 ```java
-public class MyConf {
-
-  public int id;
-  public String value;
-
+@GrpcService
+public class GrpcController extends SimpleGrpc.SimpleImplBase {
+ 
+  @Override
+  public void sayHello(HelloRequest req, StreamObserver<HelloReply> responseObserver) {
+    HelloReply reply = HelloReply.newBuilder().setMessage("Hello ==> " + req.getName()).build();
+    responseObserver.onNext(reply);
+    responseObserver.onCompleted();
+  }
+ 
 }
 ``` 
 
-- Sử dụng annotation @Configuration, @ConfigurationProperties và các hàm setter để *SpringBoot* biết và tự động tạo bean tương ứng 
-
-```java
-@Setter
-@Configuration
-@ConfigurationProperties(prefix = "my-config")
-public class MyConf {
-...
-```
-
-- Sử dụng bean *MyConf* thông qua annotation *Autowired* 
+- Tạo và intercept một TracingServerInterceptor vào GrpcControler thông qua annotation `GrpcGlobalServerInterceptor`
 
 ```java
   @Autowired
-  MyConf myConf;
-  ...
-  System.out.println("Id: " + myConf.getId());
-  System.out.println("Value: " + myConf.getValue());
+  private Tracer tracer;
+ 
+  @GrpcGlobalServerInterceptor
+  TracingServerInterceptor tracingServerInterceptor() {
+    TracingServerInterceptor tracingInterceptor = TracingServerInterceptor
+      .newBuilder()
+      .withTracer(tracer)
+      .withStreaming()
+      .withVerbosity()
+      .withTracedAttributes(ServerRequestAttribute.HEADERS,
+          ServerRequestAttribute.METHOD_TYPE)
+      .build();
+ 
+    return tracingInterceptor;
+  }
 ```
 
-Output:
+## Client
 
+- Tạo grpc-client
+
+```java
+  @GrpcClient("service-name")
+  private SimpleBlockingStub simpleStub;
+   
+  @Override
+  public String hello(String name) {
+    try {
+      final HelloReply response = this.simpleStub.sayHello(HelloRequest.newBuilder().setName(name).build());
+      return response.getMessage();
+    } catch (final StatusRuntimeException e) {
+      return "FAILED with " + e.getStatus().getCode().name();
+    }
+  }
 ```
-Id: 1
-Value: my value
+
+- Tạo ClientInterceptor và intercept vào grpc-client thông qua annotation `GrpcGlobalClientInterceptor`
+
+```java
+  @Autowired
+  private Tracer tracer;
+ 
+  @GrpcGlobalClientInterceptor
+  TracingClientInterceptor tracingServerInterceptor() {
+    TracingClientInterceptor tracingInterceptor = TracingClientInterceptor
+      .newBuilder()
+      .withTracer(tracer)
+      .withStreaming()
+      .withTracedAttributes(ClientRequestAttribute.ALL_CALL_OPTIONS, ClientRequestAttribute.HEADERS)
+      .build();
+ 
+    return tracingInterceptor;
+  }
 ```

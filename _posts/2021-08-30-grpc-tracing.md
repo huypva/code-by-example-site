@@ -18,6 +18,33 @@ Thư viện sử dụng:
 - [opentracing-contrib/java-spring-cloud](https://github.com/opentracing-contrib/java-spring-cloud) - OpenTracing instrumentation for Spring Boot
 - [opentracing-contrib/java-grpc](https://github.com/opentracing-contrib/java-grpc) - OpenTracing instrumentation for gRPC
 
+Định nghĩa dependency trong pom.xml
+```xml
+    #server service only
+    <dependency>
+        <groupId>net.devh</groupId>
+        <artifactId>grpc-spring-boot-starter</artifactId>
+        <version>VERSION</version>
+    </dependency>
+    #client service only
+    <dependency>
+        <groupId>net.devh</groupId>
+        <artifactId>grpc-client-spring-boot-starter</artifactId>
+        <version>VERSION</version>
+    </dependency>
+    #both client and server
+    <dependency>
+        <groupId>io.opentracing.contrib</groupId>
+        <artifactId>opentracing-grpc</artifactId>
+        <version>VERSION</version>
+    </dependency>
+    <dependency>
+        <groupId>io.opentracing.contrib</groupId>
+        <artifactId>opentracing-spring-jaeger-cloud-starter</artifactId>
+        <version>VERSION</version>
+    </dependency>
+```
+
 ## Server
 
 - Cấu hình OpenTracing trong application.properties

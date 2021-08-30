@@ -74,7 +74,7 @@ public class GrpcController extends SimpleGrpc.SimpleImplBase {
 }
 ``` 
 
-- Tạo và intercept một TracingServerInterceptor vào GrpcControler thông qua annotation `GrpcGlobalServerInterceptor`
+- Tạo và intercept một `TracingServerInterceptor` vào GrpcControler thông qua annotation `GrpcGlobalServerInterceptor`
 
 ```java
   @Autowired
@@ -114,7 +114,7 @@ public class GrpcController extends SimpleGrpc.SimpleImplBase {
   }
 ```
 
-- Tạo ClientInterceptor và intercept vào grpc-client thông qua annotation `GrpcGlobalClientInterceptor`
+- Tạo `TracingClientInterceptor` và intercept vào grpc-client thông qua annotation `GrpcGlobalClientInterceptor`
 
 ```java
   @Autowired

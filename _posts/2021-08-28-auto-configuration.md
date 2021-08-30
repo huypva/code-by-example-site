@@ -2,7 +2,7 @@
 title: Auto-Configuration
 author: HuyPVA
 date: 2021-08-28
-category: springboot
+category: spring-boot
 layout: post
 source: https://github.com/huypva/auto-configuration-springboot-example
 ---

@@ -2,7 +2,7 @@
 title: Tracing in Grpc API
 author: HuyPVA
 date: 2021-08-30
-category: springboot
+category: spring-boot
 layout: post
 source: https://github.com/huypva/grpc-tracing-example
 ---

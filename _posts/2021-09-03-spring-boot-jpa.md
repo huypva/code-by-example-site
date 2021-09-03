@@ -28,8 +28,6 @@ Thư viện sử dụng:
     </dependency>
 ```
 
-## Server
-
 - Cấu hình datasource & jpa trong application.yml
 ```yml
 spring:

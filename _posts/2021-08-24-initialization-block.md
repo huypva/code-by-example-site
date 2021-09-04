@@ -27,6 +27,8 @@ public class InitializationBlockExample {
 }
 ``` 
 
+Output:
+
 ```text
 Initialization block 1
 Contructor 1
@@ -56,6 +58,8 @@ public class InitializationBlockExample {
     }
 }
 ``` 
+
+Output:
 
 ```text
 Initialization block 1
@@ -88,6 +92,8 @@ public class InitializationBlockExample {
     }
 }
 ```
+
+Output:
 
 ```text
 Static initialization block 1

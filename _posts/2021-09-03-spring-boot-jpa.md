@@ -13,10 +13,11 @@ source: https://github.com/huypva/spring-boot-jpa-example
 
 Hướng dẫn giao tiếp database trong Spring Boot
 
-Thư viện sử dụng:
-- [spring-data-jpa](https://spring.io/projects/spring-data-jpa)
+- Thư viện sử dụng:
+  - [spring-data-jpa](https://spring.io/projects/spring-data-jpa)
 
-Định nghĩa dependency trong pom.xml
+- Định nghĩa dependency trong pom.xml
+
 ```xml
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -29,6 +30,7 @@ Thư viện sử dụng:
 ```
 
 - Cấu hình datasource & jpa trong application.yml
+
 ```yml
 spring:
     datasource:

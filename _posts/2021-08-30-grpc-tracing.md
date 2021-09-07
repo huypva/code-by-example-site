@@ -1,5 +1,5 @@
 ---
-title: Tracing in Grpc API
+title: Tracing Grpc API in Spring Boot application
 author: HuyPVA
 date: 2021-08-30
 category: spring-boot
@@ -11,7 +11,7 @@ source: https://github.com/huypva/grpc-tracing-example
     <img src="../assets/images/spring_boot_icon.png"/>
 </div>
 
-Hướng dẫn tích hợp OpenTracing trong Grpc API service 
+> Hướng dẫn tích hợp OpenTracing tracing Grpc API trong Spring Boot application 
 
 Thư viện sử dụng:
 - [grpc-spring-boot-starter](https://github.com/yidongnan/grpc-spring-boot-starter) - Spring Boot starter module for gRPC framework

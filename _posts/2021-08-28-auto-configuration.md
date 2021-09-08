@@ -4,7 +4,7 @@ author: HuyPVA
 date: 2021-08-28
 category: spring-boot
 layout: post
-source: https://github.com/huypva/auto-configuration-springboot-example
+source: https://github.com/huypva/spring-boot-auto-configuration-example
 ---
 
 <div align="center">

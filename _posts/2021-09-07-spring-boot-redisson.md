@@ -1,5 +1,5 @@
 ---
-title: Spring Boot + Redis with Redisson cient
+title: Spring Boot + Redis with Redisson client
 author: HuyPVA
 date: 2021-09-07
 category: spring-boot

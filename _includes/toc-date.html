@@ -18,6 +18,8 @@
 
             {% assign reversed_posts = site.posts | reverse %}
 
+            {% assign about_me = site.posts | reverse %}
+
             {% for post in reversed_posts %}
                 {% if post.category != "others" %}
                     {% if page.url == post.url %}
@@ -60,11 +62,11 @@
             <li class="divider"></li>
 
             {% if post.url == "/others/about-me" %}
-            <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+            <li class="chapter active" data-level="1.2" data-path="/others/about-me">
             {% else %}
-            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+            <li class="chapter" data-level="1.1" data-path="/others/about-me">
             {% endif %}
-                <a href="{{site.baseurl}}{{post.url}}">
+                <a href="/others/about-me">
                     About me!
                 </a>
             </li>

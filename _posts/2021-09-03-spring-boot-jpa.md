@@ -1,5 +1,5 @@
 ---
-title: Spring Data JPA trong Spring Boot
+title: Spring Boot + MySQL
 author: HuyPVA
 date: 2021-08-30
 category: spring-boot

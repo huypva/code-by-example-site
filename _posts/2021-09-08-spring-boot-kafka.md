@@ -1,5 +1,5 @@
 ---
-title: Integrate with Kafka in Spring Boot application
+title: Spring Boot + Kafka
 author: HuyPVA
 date: 2021-09-07
 category: spring-boot

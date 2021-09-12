@@ -1,17 +1,17 @@
 ---
-title: Spring Boot + Redis with Redisson client
+title: Integrate with Kafka in Spring Boot application
 author: HuyPVA
 date: 2021-09-07
 category: spring-boot
 layout: post
-source: https://github.com/huypva/spring-boot-redisson-example
+source: https://github.com/huypva/spring-boot-kafka-example
 ---
 
 <div align="center">
     <img src="../assets/images/spring_boot_icon.png"/>
 </div>
 
-> Hướng dẫn tích hợp Redis bằng Redisson client trong Spring Boot application
+> Hướng dẫn tích hợp Kafka trong Spring Boot application
 
 ### Configuration
 

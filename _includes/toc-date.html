@@ -62,11 +62,11 @@
             <li class="divider"></li>
 
             {% if post.url == "/others/about-me" %}
-            <li class="chapter active" data-level="1.2" data-path="/others/about-me">
+            <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}/others/about-me">
             {% else %}
-            <li class="chapter" data-level="1.1" data-path="/others/about-me">
+            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}/others/about-me">
             {% endif %}
-                <a href="/others/about-me">
+                <a href="{{site.baseurl}}/others/about-me">
                     About me!
                 </a>
             </li>

@@ -39,7 +39,7 @@
 
             <li class="divider"></li>
             {% for post in reversed_posts %}
-                {% if post.category == "others" and post.url != "/about-me" %}
+                {% if post.category == "others" and post.url != "/others/about-me" %}
                     {% if page.url == post.url %}
                     <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
                     {% else %}
@@ -59,7 +59,7 @@
 
             <li class="divider"></li>
 
-            {% if post.url == "/about-me" %}
+            {% if post.url == "/others/about-me" %}
             <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
             {% else %}
             <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">

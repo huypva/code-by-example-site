@@ -31,7 +31,7 @@ public class MyConf {
 }
 ``` 
 
-- Sử dụng annotation @Configuration, @ConfigurationProperties và các hàm setter để *SpringBoot* biết và tự động tạo bean tương ứng 
+- Sử dụng annotation `@Configuration`, `@ConfigurationProperties` và các hàm setter để *Spring Boot* biết và tự động tạo bean tương ứng 
 
 ```java
 @Setter

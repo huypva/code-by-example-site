@@ -49,7 +49,7 @@ public class Controller {
 }
 ```
 
-    - *RequestMapping* và *GetMapping* tạo nên path api cung cấp (Ví dụ: /api/get-mapping) 
+*RequestMapping* và *GetMapping* tạo nên path api cung cấp (Ví dụ: /api/get-mapping) 
 
 ### Mapping request
 

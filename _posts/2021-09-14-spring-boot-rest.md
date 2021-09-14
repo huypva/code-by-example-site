@@ -24,7 +24,6 @@ source: https://github.com/huypva/spring-boot-rest-example
 ``` 
 
 - Thêm cấu hình port public trong file application.yml
-
 ```yml
 server:
   port : 8081
@@ -33,7 +32,6 @@ server:
 ### Write controller
 
 - Viết class controller bằng cách sử dụng *RestController*
-
 ```java
 @RestController
 @RequestMapping("/api")

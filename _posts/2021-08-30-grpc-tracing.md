@@ -1,5 +1,5 @@
 ---
-title: Spring Boot + Jeager
+title: Spring Boot - Tracing gRPC API by Jeager
 author: HuyPVA
 date: 2021-08-30
 category: spring-boot

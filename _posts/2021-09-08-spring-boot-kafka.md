@@ -1,7 +1,7 @@
 ---
 title: Spring Boot + Kafka
 author: HuyPVA
-date: 2021-09-07
+date: 2021-09-08
 category: spring-boot
 layout: post
 source: https://github.com/huypva/spring-boot-kafka-example

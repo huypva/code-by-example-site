@@ -1,5 +1,5 @@
 ---
-title: Spring Boot - REST
+title: Spring Boot - RESTful API
 author: HuyPVA
 date: 2021-09-14
 category: spring-boot

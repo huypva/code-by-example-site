@@ -78,12 +78,12 @@ public class Controller {
 
 ## Client side
 
-Thư viện sử dụng
-- [OpenFeign](https://github.com/OpenFeign/feign): a HTTP client 
-- [spring-cloud-openfeign](https://spring.io/projects/spring-cloud-openfeign): a REST client for Spring Boot apps
+- Thư viện sử dụng
+  + [OpenFeign](https://github.com/OpenFeign/feign): a HTTP client 
+  + [spring-cloud-openfeign](https://spring.io/projects/spring-cloud-openfeign): a REST client for Spring Boot apps
 
 - Thêm dependency trong file pom.xml
-```shell script
+```xml
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
@@ -92,7 +92,6 @@ Thư viện sử dụng
 ```
 
 - Cấu hình url, path trong file application.yml
-
 ```yaml
 greeting-service:
   url: http://localhost:8082
@@ -104,7 +103,6 @@ greeting-service:
 ```
 
 - Sử dụng *FeignClient* annotation để tạo RestClient
-
 ```java
 @FeignClient(value = "greeting", url = "${greeting-service.url}")
 public interface GreetingRestClient {
@@ -125,7 +123,6 @@ public interface GreetingRestClient {
 ```
 
 - Autowired *GreetingRestClient* bean để giao tiếp server side
-
 ```java
   @Autowired
   GreetingRestClient greetingRestClient;

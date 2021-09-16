@@ -92,7 +92,7 @@ public class Controller {
 ```
 
 - Cấu hình url, path trong file application.yml
-```yaml
+```yml
 greeting-service:
   url: http://localhost:8082
   path:

@@ -103,6 +103,7 @@ greeting-service:
 ```
 
 - Sử dụng *FeignClient* annotation để tạo RestClient
+
 ```java
 @FeignClient(value = "greeting", url = "${greeting-service.url}")
 public interface GreetingRestClient {
@@ -123,6 +124,7 @@ public interface GreetingRestClient {
 ```
 
 - Autowired *GreetingRestClient* bean để giao tiếp server side
+
 ```java
   @Autowired
   GreetingRestClient greetingRestClient;

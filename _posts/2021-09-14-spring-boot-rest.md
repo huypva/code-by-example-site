@@ -1,5 +1,5 @@
 ---
-title: Spring Boot - RESTful API (Server/Client side)
+title: Spring Boot - RESTful API
 author: HuyPVA
 date: 2021-09-14
 category: spring-boot
@@ -82,8 +82,7 @@ public class Controller {
   - [OpenFeign](https://github.com/OpenFeign/feign): a HTTP client 
   - [spring-cloud-openfeign](https://spring.io/projects/spring-cloud-openfeign): a REST client for Spring Boot apps 
 
-Thêm dependency trong file pom.xml
-
+- Thêm dependency trong file pom.xml
 ```shell script
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

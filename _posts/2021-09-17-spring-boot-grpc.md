@@ -17,7 +17,8 @@ source: https://github.com/huypva/spring-boot-grpc-example
   - [grpc-spring-boot-starter](https://github.com/yidongnan/grpc-spring-boot-starter):  Spring Boot starter module for gRPC framework
 
 ## Build proto file 
-- Tạo file proto và thêm trong thư mục /src/main/proto của ứng dụng
+- Tạo file proto và thêm trong thư mục /src/main/proto của ứng dụng.
+
 Cấu trúc thư mục như sau:
 
 ```

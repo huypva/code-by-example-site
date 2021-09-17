@@ -149,7 +149,6 @@ grpc:
 ```
 
 - Sử dụng *GrpcClient* để tạo GrpcClient
-
 ```java
 public class GreetingGrpcClient implements GreetingClient {
 

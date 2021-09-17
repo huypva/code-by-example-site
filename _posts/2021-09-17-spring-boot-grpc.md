@@ -104,7 +104,7 @@ grpc:
 ```
 
 - Sử dụng annotation *GrpcService* để tạo controller
-```java
+```
 @GrpcService
 public class Controller extends GreetingGrpc.GreetingImplBase {
 
@@ -149,7 +149,7 @@ grpc:
 ```
 
 - Sử dụng *GrpcClient* để tạo GrpcClient
-```java
+```
 public class GreetingGrpcClient implements GreetingClient {
 
   @GrpcClient("greeting")

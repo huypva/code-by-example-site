@@ -19,6 +19,7 @@ source: https://github.com/huypva/spring-boot-grpc-example
 ## Build proto file 
 - Tạo file proto và thêm trong thư mục /src/main/proto của ứng dụng
 Cấu trúc thư mục như sau:
+
 ```
 .
 ├── src
@@ -38,6 +39,7 @@ Cấu trúc thư mục như sau:
 ```
 
 - Thêm build trong file pom.xml
+
 ```xml
     <properties>
         <kr.motd.maven.version>1.5.0.Final</kr.motd.maven.version>
@@ -88,6 +90,7 @@ Cấu trúc thư mục như sau:
 ### Server side
 
 - Thêm dependency trong pom.xml
+
 ```xml
 		<dependency>
 			<groupId>net.devh</groupId>
@@ -97,6 +100,7 @@ Cấu trúc thư mục như sau:
 ``` 
 
 - Thêm port gRPC trong file application.yml
+
 ```yml
 grpc:
   server:
@@ -104,7 +108,8 @@ grpc:
 ```
 
 - Sử dụng annotation *GrpcService* để tạo controller
-```
+
+``` java
 @GrpcService
 public class Controller extends GreetingGrpc.GreetingImplBase {
 
@@ -129,6 +134,7 @@ public class Controller extends GreetingGrpc.GreetingImplBase {
 ### Client side
 
 - Thêm dependency trong file pom.xml
+
 ```xml
 		<dependency>
 			<groupId>net.devh</groupId>
@@ -138,6 +144,7 @@ public class Controller extends GreetingGrpc.GreetingImplBase {
 ```
 
 - Cấu hình thông tin server trong application.yml
+
 ```yml
 grpc:
   client:
@@ -149,7 +156,8 @@ grpc:
 ```
 
 - Sử dụng *GrpcClient* để tạo GrpcClient
-```
+
+``` java
 public class GreetingGrpcClient implements GreetingClient {
 
   @GrpcClient("greeting")

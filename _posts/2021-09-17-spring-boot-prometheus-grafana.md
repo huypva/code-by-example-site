@@ -74,14 +74,14 @@ management:
 
 - Kiểm tra các đường dẫn actuator quản lý
 
-```shell script
+```shell
 $ curl -X GET http://localhost:8081/actuator
 {"_links":{"self":{"href":"http://localhost:8081/actuator","templated":false},"health":{"href":"http://localhost:8081/actuator/health","templated":false},"health-path":{"href":"http://localhost:8081/actuator/health/{*path}","templated":true},"prometheus":{"href":"http://localhost:8081/actuator/prometheus","templated":false}}}
 ```
 
 - Xem các metrics cho prometheus
 
-```shell script
+```shell
 $ curl -X GET http://localhost:8081/actuator/prometheus
 ...
 http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator/prometheus",} 0.2230911
@@ -146,7 +146,7 @@ scrape_configs:
 
 - Start docker-compose
 
-```shell script
+```shell
 $ docker-compose up -d
 ```
 

@@ -88,7 +88,7 @@ Cấu trúc thư mục như sau:
     </build>
 ```
 
-### Server side
+## Server side
 
 - Thêm dependency trong pom.xml
 
@@ -132,7 +132,7 @@ public class Controller extends GreetingGrpc.GreetingImplBase {
 }
 ```
 
-### Client side
+## Client side
 
 - Thêm dependency trong file pom.xml
 

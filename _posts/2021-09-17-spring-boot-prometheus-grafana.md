@@ -209,4 +209,4 @@ sum(rate(http_server_requests_seconds_bucket{application="$application", instanc
 histogram_quantile(0.99, sum(rate(http_server_requests_seconds_bucket{application="$application", instance="$instance"}[1m])) by (le, uri))
 ```
 
-![extra metrics](./assets/images/springboot_prometheus_grafana/grafana_extra_metrics.png)
+![extra metrics](../assets/images/springboot_prometheus_grafana/grafana_extra_metrics.png)

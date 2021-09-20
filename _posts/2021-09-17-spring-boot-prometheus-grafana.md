@@ -73,12 +73,14 @@ management:
 - Thêm các class cần thiết và start một Restfull service
 
 - Kiểm tra các đường dẫn actuator quản lý
+
 ```shell script
 $ curl -X GET http://localhost:8081/actuator
 {"_links":{"self":{"href":"http://localhost:8081/actuator","templated":false},"health":{"href":"http://localhost:8081/actuator/health","templated":false},"health-path":{"href":"http://localhost:8081/actuator/health/{*path}","templated":true},"prometheus":{"href":"http://localhost:8081/actuator/prometheus","templated":false}}}
 ```
 
-- Xem các metrics cho promethues
+- Xem các metrics cho prometheus
+
 ```shell script
 $ curl -X GET http://localhost:8081/actuator/prometheus
 ...
@@ -94,6 +96,7 @@ process_cpu_usage 0.009735744089012517
 ## Cài đặt prometheus & grafana
 
 - File docker-compose.yml
+
 ```yaml
 version: "3.4"
 
@@ -130,7 +133,8 @@ networks:
   prometheus-grafana-network:
 ```
 
-- Với file config promethues.yml
+- Với file config prometheus.yml
+
 ```yaml
 scrape_configs:
   - job_name: 'spring-boot-prometheus-grafana-metrics'
@@ -141,6 +145,7 @@ scrape_configs:
 ```
 
 - Start docker-compose
+
 ```shell script
 $ docker-compose up -d
 ```
@@ -168,6 +173,7 @@ $ docker-compose up -d
 ### Thêm monitor some api 
 - Success Rate
     + Metric 1
+    
 ```text
 sum(increase(http_server_requests_seconds_bucket{application="$application", instance="$instance", status="200"}[1m]))
 /
@@ -175,6 +181,7 @@ sum(increase(http_server_requests_seconds_bucket{application="$application", ins
 ```
 
     + Metric 2
+    
 ```text
 sum(increase(http_server_requests_seconds_bucket{application="$application", instance="$instance", status!="200"}[1m]))
 /
@@ -190,11 +197,13 @@ sum(increase(http_server_requests_seconds_bucket{uri="/greeting"}[1m]))
 ```
 
 - Throughput
+
 ```text
 sum(rate(http_server_requests_seconds_bucket{application="$application", instance="$instance"}[1m])) by (uri)
 ```
 
 - Latency P99
+
 ```text
 histogram_quantile(0.99, sum(rate(http_server_requests_seconds_bucket{application="$application", instance="$instance"}[1m])) by (le, uri))
 ```

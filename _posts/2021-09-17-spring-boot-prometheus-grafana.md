@@ -156,7 +156,7 @@ $ docker-compose up -d
 
 ## Tạo dashboard trên Grafana
 
-### Tạo dashboard monitor JVM metric
+### Dashboard monitor JVM metric
 
 - Setup Prometheus datasource
 
@@ -171,7 +171,7 @@ $ docker-compose up -d
 ![jmv metrics](../assets/images/springboot_prometheus_grafana/grafana_jvm_metrics.png)
 
 
-### Thêm monitor some api 
+### Dashboard monitor api 
 - Success Rate
     + Metric 1
     

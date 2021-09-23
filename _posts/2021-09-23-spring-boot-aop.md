@@ -16,8 +16,6 @@ source: https://github.com/huypva/spring-boot-aop-example
 - Thư viện sử dụng
   - [spring-boot-starter-aop](https://docs.spring.io/spring-framework/docs/4.3.15.RELEASE/spring-framework-reference/html/aop.html)
 
-## Tạo một spring-boot application 
-
 - Thêm dependency trong file pom.xml
 
 ```xml

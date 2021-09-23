@@ -19,7 +19,7 @@ source: https://github.com/huypva/spring-boot-prometheus-grafana-example
   - [Promethues](https://prometheus.io/)
   - [Grafana](https://grafana.com/)
 
-## Tạo một spring-boot application 
+## Tạo một Spring Boot application 
 
 - Thêm dependency trong file pom.xml
 

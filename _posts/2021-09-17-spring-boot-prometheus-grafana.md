@@ -1,7 +1,7 @@
 ---
 title: Spring Boot - Prometheus + Grafana
 author: HuyPVA
-date: 2021-09-14
+date: 2021-09-17
 category: spring-boot
 layout: post
 source: https://github.com/huypva/spring-boot-prometheus-grafana-example
@@ -36,16 +36,6 @@ source: https://github.com/huypva/spring-boot-prometheus-grafana-example
           <artifactId>micrometer-registry-prometheus</artifactId>
         </dependency>
 ```
-
-- Thêm dependency trong pom.xml
-
-```xml
-		<dependency>
-			<groupId>net.devh</groupId>
-			<artifactId>grpc-spring-boot-starter</artifactId>
-			<version>2.12.0.RELEASE</version>
-		</dependency>
-``` 
 
 - Thêm config cho micrometer trong file application.yml
 

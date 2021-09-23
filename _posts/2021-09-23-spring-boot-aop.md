@@ -11,7 +11,7 @@ source: https://github.com/huypva/spring-boot-aop-example
     <img src="../assets/images/spring_boot_icon.png"/>
 </div>
 
-> Hướng dẫn Spring AOP trong Spring Boot application
+> Hướng dẫn sử dụng Spring AOP để xử lý cho annotation trong Spring Boot application
 
 - Thư viện sử dụng
   - [spring-boot-starter-aop](https://docs.spring.io/spring-framework/docs/4.3.15.RELEASE/spring-framework-reference/html/aop.html)

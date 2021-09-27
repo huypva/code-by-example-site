@@ -67,7 +67,7 @@ public class TimeLoggerAspectJ {
 
 - Thêm annotaion `EnableAspectJAutoProxy` để kích hoạt Aop
 
-```
+```java
 @EnableAspectJAutoProxy
 @SpringBootApplication
 public class AopApplication {

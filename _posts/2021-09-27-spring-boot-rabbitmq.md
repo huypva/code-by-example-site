@@ -26,6 +26,17 @@ source: https://github.com/huypva/spring-boot-rabbitmq-example
     
 ```
 
+- Thêm configuration sử dụng rabbitmq trong file application.yml
+
+```yaml
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+```
+
 - Tạo các bean *Queue*, *Exchange* và *Binding*
 
 ```java

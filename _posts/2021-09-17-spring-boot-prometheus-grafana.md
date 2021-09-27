@@ -37,7 +37,7 @@ source: https://github.com/huypva/spring-boot-prometheus-grafana-example
         </dependency>
 ```
 
-- Thêm config cho micrometer trong file application.yml
+- Thêm configuration cho micrometer trong file application.yml
 
 ```yml
 management:

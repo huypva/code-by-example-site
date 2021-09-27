@@ -65,7 +65,7 @@ public class RabbitConfiguration {
 }
 ```
 
-- Tạo provider sử dụng *RabbitTemplate* để send message đến RabbitMQ
+- Tạo producer bằng cách sử dụng *RabbitTemplate* để send message đến RabbitMQ
 
 ```java
 @Component
@@ -87,7 +87,7 @@ public class GreetingRabbitProviderImpl implements GreetingRabbitProvider {
 }
 ```
 
-- Sử dụng annotation *RabbitListener* để tạo consumer
+- Sử dụng annotation *RabbitListener* để tạo consumer/listener
 
 ```java
 @Slf4j

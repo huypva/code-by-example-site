@@ -37,7 +37,7 @@ spring:
     password: guest
 ```
 
-- Tạo các bean *Queue*, *Exchange* và *Binding*
+- Tạo các bean *Exchange*, *Queue* và *Binding* để bind Queue với Exchange
 
 ```java
 @Configuration

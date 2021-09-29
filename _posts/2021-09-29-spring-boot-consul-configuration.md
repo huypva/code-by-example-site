@@ -104,16 +104,17 @@ spring:
         data-key: key
 ```
 
-  - *Lưu ý*: Project sẽ đọc tất cả các key [key] trong các path sau:
-    - [prefix]/[name]/
-    - [prefix]/[name][profile-separator][spring.profiles.active]/
-    - [prefix]/[default-context]/
-    - [prefix]/[default-context][profile-separator][spring.profiles.active]/
+  - *Lưu ý*: Project sẽ đọc tất cả các nội dụng trong các path sau:
+    - [prefix]/[name]/[key]
+    - [prefix]/[name][profile-separator][spring.profiles.active]/[key]
+    - [prefix]/[default-context]/[key]
+    - [prefix]/[default-context][profile-separator][spring.profiles.active]/[key]
 
 - Thêm nội dung giống như application.yml trên Consul tại path /prefix/name/key/
-Ở đây, ví dụ có thay đổi một số giá trị `value` trong config trên Consul
+Ở đây, ví dụ có thay đổi một số giá trị `value` trong config trên Consul để dễ kiểm tra
 
 ![spring_boot_consul](../assets/images/spring_boot_consul.png)
+![setup ds prometheus](../assets/images/spring_boot_icon.png)
 
 
 - Kết quả sau khi chạy chương trình

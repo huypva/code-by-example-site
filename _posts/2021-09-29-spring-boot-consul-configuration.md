@@ -47,7 +47,7 @@ public class MyConf {
 
 ```java
     @Autowired
-	MyConf myConf;
+    MyConf myConf;
 
 	@Value("${spring.application.name}")
 	String applicationName;
@@ -63,14 +63,13 @@ public class MyConf {
 
 - Kết quả sau khi chạy chương trình
 
-```shell script
+```shell
 $ ./mvnw spring-boot:run
 2021-09-29 10:18:22.194  INFO 2892 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2021-09-29 10:18:22.201  INFO 2892 --- [           main] i.c.springbootconsul.Application         : Started Application in 3.853 seconds (JVM running for 4.93)
 Id: 1
 Value: my value
 Application name: spring-boot-consul
-
 ```
 
 ## Sử dụng configuration với Consul
@@ -106,10 +105,10 @@ spring:
 ```
 
   - Lưu ý: Project sẽ đọc tất cả các key [key] trong các path sau:
-        [prefix]/[name]/
-        [prefix]/[name],[active]/
-        [prefix]/[default-context]/
-        [prefix]/[default-context],[active]/
+    - [prefix]/[name]/
+    - [prefix]/[name],[active]/
+    - [prefix]/[default-context]/
+    - [prefix]/[default-context],[active]/
 
 - Thêm nội dung giống như application.yml trên Consul tại path /prefix/name/key/
 Ở đây, ví dụ có thay đổi một số giá trị `value` trong config trên Consul
@@ -119,7 +118,7 @@ spring:
 
 - Kết quả sau khi chạy chương trình
 
-```shell script
+```shell
 $ ./mvnw spring-boot:run
 2021-09-29 10:26:17.441  INFO 3120 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-prefix/name::locals/'}, BootstrapPropertySource {name='bootstrapProperties-prefix/name/'}, BootstrapPropertySource {name='bootstrapProperties-prefix/context::locals/'}, BootstrapPropertySource {name='bootstrapProperties-prefix/context/'}]
 ...

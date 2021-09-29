@@ -15,7 +15,9 @@ source: https://github.com/huypva/spring-boot-rabbitmq-example
 
 ## Tạo ứng dụng
 
-- Trong ứng dụng Spring Boot, config được đặt trong file application.yml (hoặc .properties). Tạo một project với file configuration application.yml như sau
+- Trong ứng dụng Spring Boot, config được đặt trong file application.yml (hoặc .properties).
+
+Tạo một project với file configuration application.yml như sau
 
 ```yaml
 server:
@@ -111,11 +113,10 @@ spring:
     - [prefix]/[default-context][profile-separator][spring.profiles.active]/[key]
 
 - Sử dung ui của Consul tại địa chỉ http://localhost:8500/ui/dc1/kv để thêm nội dung giống như application.yml tại path /prefix/name/key/ 
+
 Ở đây, ví dụ có thay đổi một số giá trị `value` trong config trên Consul để dễ kiểm tra
 
 ![spring_boot_consul](../assets/images/spring_boot_consul.png)
-![setup ds prometheus](../assets/images/spring_boot_icon.png)
-
 
 - Kết quả sau khi chạy chương trình
 

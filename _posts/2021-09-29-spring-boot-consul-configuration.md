@@ -89,7 +89,7 @@ Application name: spring-boot-consul
 ```yaml
 spring:
   profiles:
-    active: locals
+    active: local
   cloud:
     consul:
       host: localhost
@@ -99,16 +99,16 @@ spring:
         format: YAML
         prefix: prefix #default: config
         name: name
-        defaultContext: context #default: application
-        profileSeparator: '::'
+        default-context: context #default: application
+        profile-separator: '::'
         data-key: key
 ```
 
-  - Lưu ý: Project sẽ đọc tất cả các key [key] trong các path sau:
+  - *Lưu ý*: Project sẽ đọc tất cả các key [key] trong các path sau:
     - [prefix]/[name]/
-    - [prefix]/[name],[active]/
+    - [prefix]/[name][profile-separator][spring.profiles.active]/
     - [prefix]/[default-context]/
-    - [prefix]/[default-context],[active]/
+    - [prefix]/[default-context][profile-separator][spring.profiles.active]/
 
 - Thêm nội dung giống như application.yml trên Consul tại path /prefix/name/key/
 Ở đây, ví dụ có thay đổi một số giá trị `value` trong config trên Consul
@@ -120,11 +120,30 @@ spring:
 
 ```shell
 $ ./mvnw spring-boot:run
-2021-09-29 10:26:17.441  INFO 3120 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-prefix/name::locals/'}, BootstrapPropertySource {name='bootstrapProperties-prefix/name/'}, BootstrapPropertySource {name='bootstrapProperties-prefix/context::locals/'}, BootstrapPropertySource {name='bootstrapProperties-prefix/context/'}]
 ...
-2021-09-29 10:22:02.258  INFO 3057 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2021-09-29 10:22:02.266  INFO 3057 --- [           main] i.c.springbootconsul.Application         : Started Application in 5.047 seconds (JVM running for 6.007)
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.6.RELEASE)
+
+2021-09-29 10:34:46.467  INFO 3429 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-prefix/name::local/'}, BootstrapPropertySource {name='bootstrapProperties-prefix/name/'}, BootstrapPropertySource {name='bootstrapProperties-prefix/context::local/'}, BootstrapPropertySource {name='bootstrapProperties-prefix/context/'}]
+2021-09-29 10:34:46.472  INFO 3429 --- [           main] i.c.springbootconsul.Application         : The following profiles are active: local
+2021-09-29 10:34:46.817  INFO 3429 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0adf9a47-44e9-34ef-9488-1afeb9ef43b8
+2021-09-29 10:34:46.999  INFO 3429 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-09-29 10:34:47.006  INFO 3429 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-29 10:34:47.006  INFO 3429 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-09-29 10:34:47.094  INFO 3429 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-29 10:34:47.095  INFO 3429 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 609 ms
+2021-09-29 10:34:47.214  INFO 3429 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-29 10:34:47.326  INFO 3429 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'configWatchTaskScheduler'
+2021-09-29 10:34:47.410  INFO 3429 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-09-29 10:34:47.415  INFO 3429 --- [           main] i.c.springbootconsul.Application         : Started Application in 2.029 seconds (JVM running for 2.308)
 Id: 1
 Value: my value from consul
 Application name: spring-boot-consul
 ```
+
+*Lưu ý*: Sau khi sử dụng config trên Consul, nên xóa file config `application.yml` để tránh nhầm lẫn

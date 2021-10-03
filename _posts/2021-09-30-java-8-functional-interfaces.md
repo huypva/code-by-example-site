@@ -33,7 +33,7 @@ Tiếp theo là một số Functional Interfaces có sẵn trong Java 8 thườn
 
 ## Supplier
 
-- Functional interface *Suplier* có method trừu tượng không tham số, và return về một đối tượng
+- *Suplier* chứa method trừu tượng không tham số, và return về một đối tượng
 
 ```java
 @FunctionalInterface
@@ -67,7 +67,7 @@ public interface Supplier<T> {
 
 ## Consumer
 
-- *Consumer* là một functional interface có một method trừu tượng có một tham số đầu vào và không return (void method). 
+- *Consumer* chứa method trừu tượng có một tham số đầu vào và không return (void method). 
 
 ```java
 @FunctionalInterface
@@ -100,7 +100,7 @@ public interface Consumer<T> {
 
 ## Predicate
 
-- *Predicate* là một function interface có một method trừu tượng có một tham số đầu vào, và return boolean (true/false)
+- *Predicate* chứa method trừu tượng có một tham số đầu vào, và return boolean (true/false)
 
 ```java
 @FunctionalInterface
@@ -133,7 +133,7 @@ public interface Predicate<T> {
 
 ## Function
 
-- Function interface *Function* có một method trừu tượng có một tham số đầu vào và return một tham số khác
+- *Function* chứa method trừu tượng có một tham số đầu vào và return một tham số khác
 
 ```java
 @FunctionalInterface
@@ -165,7 +165,7 @@ public interface Function<T, R> {
 ## Comparator
 
 - Trước Java 8, *Comparator* là một Interface được sử dụng nhiều để so sánh 2 tham số. 
-Từ Java 8, Functional interface *Comparator* có method trừu tượng có 2 tham số (a, b) và return kiểu int với ý nghĩa
+Từ Java 8, Functional interface *Comparator* chứa method trừu tượng có 2 tham số (a, b) và return kiểu int với ý nghĩa
     - `1`: a>b
     - `0`: a=b
     - `-1`: a < b

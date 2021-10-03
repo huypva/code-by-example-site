@@ -1,7 +1,7 @@
 ---
 title: Java 8 - Functional Interfaces
 author: HuyPVA
-date: 2021-09-27
+date: 2021-09-30
 category: java-8
 layout: post
 source: https://github.com/huypva/java-8-functional-interfaces-example
@@ -46,15 +46,10 @@ public interface Supplier<T> {
 - Ví dụ: sử dụng functional interface Supplier
 
 ```java
-  public SupplierExample(String title) {
-    super(title);
-  }
-
   public void println(Supplier<String> supp) {
     System.out.println(supp.get());
   }
 
-  @Override
   public void beforeJava8() {
     println(new Supplier<String>(){
 
@@ -65,7 +60,6 @@ public interface Supplier<T> {
     });
   }
 
-  @Override
   public void java8() {
     println(() -> "Example");
   }
@@ -88,7 +82,6 @@ public interface Consumer<T> {
 ```java
   List<String> list = Arrays.asList("a", "b", "c", "d", "e");
 
-  @Override
   public void beforeJava8() {
     list.forEach(new Consumer<String>() {
       @Override
@@ -99,7 +92,6 @@ public interface Consumer<T> {
     System.out.println();
   }
 
-  @Override
   public void java8() {
     list.forEach(s -> System.out.print(s + "\t"));
     System.out.println();
@@ -123,7 +115,6 @@ public interface Predicate<T> {
 ```java
   List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6);
 
-  @Override
   public void beforeJava8() {
     Stream<Integer> stream2 = list.stream().filter(new Predicate<Integer>() {
       @Override
@@ -133,7 +124,6 @@ public interface Predicate<T> {
     });
   }
 
-  @Override
   public void java8() {
     Stream<Integer> stream2 = list.stream().filter(t -> {
       return t % 2 == 1;
@@ -158,7 +148,6 @@ public interface Function<T, R> {
 ```java
   List<String> list = Arrays.asList("a", "c", "B", "D", "e");
 
-  @Override
   public void beforeJava8() {
     Stream<String> stream2 = list.stream().map(new Function<String, String>() {
       @Override
@@ -168,7 +157,6 @@ public interface Function<T, R> {
     });
   }
 
-  @Override
   public void java8() {
     Stream<String> stream2 = list.stream().map(s -> s == null ? null : s.toUpperCase());
   }
@@ -176,7 +164,7 @@ public interface Function<T, R> {
 
 ## Comparator
 
-- Trước Java 8, *Comparator* là một Interface được sử dụng nhiều để so sánh 2 đối số. 
+- Trước Java 8, *Comparator* là một Interface được sử dụng nhiều để so sánh 2 tham số. 
 Từ Java 8, Functional interface *Comparator* có method trừu tượng có 2 tham số (a, b) và return kiểu int với ý nghĩa
     - `1`: a>b
     - `0`: a=b
@@ -195,7 +183,6 @@ public interface Comparator<T> {
 ```java
   List<Integer> list = Arrays.asList(1, 5, 2, 6, 3, 4, 7);
 
-  @Override
   public void beforeJava8() {
     Collections.sort(list, new Comparator<Integer>() {
       @Override
@@ -205,7 +192,6 @@ public interface Comparator<T> {
     });
   }
 
-  @Override
   public void java8() {
     Collections.sort(list, (o1, o2) -> o1.compareTo(o2));
   }

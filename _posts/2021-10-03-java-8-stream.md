@@ -25,7 +25,7 @@ Bao gồm:
 
 ### distinct()
 
-- Loại bỏ các phần từ giống nhau
+- Loại bỏ các phần tử giống nhau
 
 ```java
   Stream<T> distinct();
@@ -55,7 +55,7 @@ Output:
 
 ### filter()
 
-- Lọc các phần từ theo điều kiện
+- Lọc các phần tử theo điều kiện
 
 ```java
   Stream<T> filter(Predicate<? super T> predicate);
@@ -81,7 +81,7 @@ Number empty: 2
 
 ### limit()/skip()
 
-- *limit* lấy các phần từ đầu tiên. *skip* bỏ các phần từ đầu tiên.
+- *limit* lấy các phần tử đầu tiên. *skip* bỏ các phần tử đầu tiên.
 
 ```java
   Stream<T> limit(long maxSize);
@@ -140,7 +140,7 @@ Output:
 12
 ```
 
-### sorted();
+### sorted()
 
 - Sắp xếp các phần tử
 
@@ -260,7 +260,7 @@ Output:
 
 ### reduce() 
 
-- Kết hợp các phần từ 
+- Kết hợp các phần tử thầnh một giá trị duy nhất
 
 ```java
     Optional<T> reduce(BinaryOperator<T> accumulator);

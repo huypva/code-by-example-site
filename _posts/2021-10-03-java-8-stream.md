@@ -19,7 +19,7 @@ Bao gồm:
 
     - 1 stream source
     - 0 hoặc nhiều intermediate operation
-    - 1 terminal operation.
+    - 1 terminal operation
 
 ## Intermediate operations
 

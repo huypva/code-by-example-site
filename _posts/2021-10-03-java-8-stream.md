@@ -16,6 +16,7 @@ source: https://github.com/huypva/java-8-streams-example
 ## Stream pipeline
 
 Bao gồm: 
+
     - 1 stream source
     - 0 hoặc nhiều intermediate operation
     - 1 terminal operation.

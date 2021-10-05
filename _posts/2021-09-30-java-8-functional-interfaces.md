@@ -11,7 +11,7 @@ source: https://github.com/huypva/java-8-functional-interfaces-example
     <img src="../assets/images/functional_interfaces.png"/>
 </div>
 
-> Vài example về Function Interfaces trong Java 8
+> Function Interfaces trong Java 8
 
 ## Functional Interfaces
 

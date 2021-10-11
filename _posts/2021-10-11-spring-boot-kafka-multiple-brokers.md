@@ -1,5 +1,5 @@
 ---
-title: Spring Boot + Kafka
+title: Spring Boot + Kafka with multiple brokers
 author: HuyPVA
 date: 2021-10-11
 category: spring-boot

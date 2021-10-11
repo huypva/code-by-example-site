@@ -23,8 +23,6 @@ source: https://github.com/huypva/spring-boot-kafka-multiple-brokers-example
 		</dependency>
 ``` 
 
-### Configuration
-
 - Thêm cấu hình Kafka trong file application.yml, ở đây có 2 Kafka khác nhau
 
 ```yml
@@ -38,7 +36,7 @@ bank-kafka:
     missing-topics-fatal: false
 ```
 
-- Tạo class load properties
+- Tạo class load properties cho broker thứ nhất
 
 ```java
 @Configuration
@@ -48,7 +46,7 @@ public class UserKafkaProperties extends KafkaProperties {
 }
 ```
 
-và 
+và với broker thứ 2
 
 ```java
 @Configuration
@@ -70,7 +68,7 @@ public class KafkaMultipleBrokersApplication {
 }
 ```
 
-### Tạo Producer từng broker
+### Tạo Producer
 
 - Tạo class Configuration để tạo bean *KafkaTemplate* cho broker thứ nhất
 
@@ -133,7 +131,7 @@ public class UserKafkaProducerImpl implements UserKafkaProducer {
 
 - Tương tự tạo các class `BankKafkaConfiguration`, `BankKafkaProducerImpl` cho broker thứ 2
 
-### Tạo Consumer từng broker
+### Tạo Consumer
 
 - Tạo các bean *ConcurrentKafkaListenerContainerFactory*, *ConsumerFactory* cần thiết cho Consumer trong class `UserKafkaConfiguration` 
 

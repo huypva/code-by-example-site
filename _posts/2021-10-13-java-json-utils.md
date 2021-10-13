@@ -8,7 +8,7 @@ source: https://github.com/huypva/java-json-utils
 ---
 
 <div align="center">
-    <img src="../assets/images/json-utils.png"/>
+    <img src="../assets/images/json_utils.png"/>
 </div>
 
 > Hướng dẫn thao tác Json thông qua Gson hoặc Jackson 

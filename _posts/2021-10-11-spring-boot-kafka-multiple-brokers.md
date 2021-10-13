@@ -8,7 +8,7 @@ source: https://github.com/huypva/spring-boot-kafka-multiple-brokers-example
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot_icon.png"/>
+    <img src="../assets/images/kafka_multi_brokers.png"/>
 </div>
 
 > Hướng dẫn Spring Boot application tích hợp với nhiều Kafka brokers khác nhau 

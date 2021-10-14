@@ -2,7 +2,6 @@
 title: Spring Boot
 author: HuyPVA
 date: 2021-10-14
-category: category
 layout: post
 ---
 

@@ -9,7 +9,7 @@ source: https://github.com/huypva/string-pool-example
 
 `String` trong Java được lưu trữ như sau
 
-![StringPool](../assets/images/string_pool.png)
+![StringPool](../../assets/images/string_pool.png)
 
 - Tạo `String` bằng `String str1 = "abc"`
     - JMV sẽ kiểm tra và tạo mới một object nếu chưa có trong String pool.

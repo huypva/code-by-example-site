@@ -15,10 +15,10 @@
 
             {% assign reversed_posts = site.posts | reverse %}
 
-            {% assign about_me = site.posts | reverse %}
+            {% assign category_posts = site.posts | where: site.posts.category == "category"  | reverse %}
 
-            {% for post in reversed_posts %}
-                {% if post.category == "category" %}
+            {% for post in category_posts %}
+<!--                {% if post.category == "category" %}-->
                     {% if page.url == post.url %}
                     <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
                     {% else %}
@@ -33,7 +33,7 @@
                             {% endif %}
                         {% endif %}
                     </li>
-                {% endif %}
+<!--                {% endif %}-->
             {% endfor %}
 
             <li class="divider"></li>

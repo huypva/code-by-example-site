@@ -10,16 +10,28 @@ layout: post
     <img src="../assets/images/spring_boot_icon.png"/>
 </div>
 
-### [Auto-Configuration](./java/auto-configuration)
-### [Grpc Tracing](./java/grpc-tracing)
-### [Jpa](./java/spring-boot-jpa)
-### [Redisson](./java/spring-boot-redisson)
-### [Kafka](./java/spring-boot-kafka)
-### [Rest](./java/spring-boot-rest)
-### [Grpc](./java/spring-boot-grpc)
-### [Prometheus + Grafana](./java/spring-boot-promethues-grafana)
-### [AOP](./java/spring-boot-aop)
-### [RabbitMQ](./java/spring-boot-rabbitmq)
-### [Consul Configuration](./java/spring-boot-consul-configuration)
-### [Kafka with multiple brokers](./java/spring-boot-kafka-multiple-brokers)
-### [Cassandra](./java/spring-boot-cassandra)
+# 1. [Auto-Configuration](../spring-boot/auto-configuration)
+
+# 2. [Grpc Tracing](./spring-boot/grpc-tracing)
+
+# 3. [Jpa](../spring-boot/spring-boot-jpa)
+
+# [Redisson](../spring-boot/spring-boot-redisson)
+
+# [Kafka](../spring-boot/spring-boot-kafka)
+
+# [Rest](../spring-boot/spring-boot-rest)
+
+# [Grpc](../spring-boot/spring-boot-grpc)
+
+# [Prometheus + Grafana](../spring-boot/spring-boot-promethues-grafana)
+
+# [AOP](../spring-boot/spring-boot-aop)
+
+# [RabbitMQ](../spring-boot/spring-boot-rabbitmq)
+
+# [Consul Configuration](../spring-boot/spring-boot-consul-configuration)
+
+# [Kafka with multiple brokers](../spring-boot/spring-boot-kafka-multiple-brokers)
+
+# [Cassandra](../spring-boot/spring-boot-cassandra)

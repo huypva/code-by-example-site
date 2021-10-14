@@ -20,17 +20,17 @@ layout: post
 
 # [Kafka](../spring-boot/spring-boot-kafka)
 
-# [Rest](../spring-boot/spring-boot-rest)
+# [RESTfull API](../spring-boot/spring-boot-rest)
 
-# [Grpc](../spring-boot/spring-boot-grpc)
+# [gRPC API](../spring-boot/spring-boot-grpc)
 
-# [Prometheus + Grafana](../spring-boot/spring-boot-promethues-grafana)
+# [Monitor application with Prometheus and Grafana](../spring-boot/spring-boot-prometheus-grafana)
 
 # [AOP](../spring-boot/spring-boot-aop)
 
 # [RabbitMQ](../spring-boot/spring-boot-rabbitmq)
 
-# [Consul Configuration](../spring-boot/spring-boot-consul-configuration)
+# [Configuration with Consul](../spring-boot/spring-boot-consul-configuration)
 
 # [Kafka with multiple brokers](../spring-boot/spring-boot-kafka-multiple-brokers)
 

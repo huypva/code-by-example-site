@@ -10,11 +10,11 @@ layout: post
     <img src="../assets/images/spring_boot_icon.png"/>
 </div>
 
-# 1. [Auto-Configuration](../spring-boot/auto-configuration)
+# [Auto-Configuration](../spring-boot/auto-configuration)
 
-# 2. [Grpc Tracing](./spring-boot/grpc-tracing)
+# [Grpc Tracing](../spring-boot/grpc-tracing)
 
-# 3. [Jpa](../spring-boot/spring-boot-jpa)
+# [Jpa](../spring-boot/spring-boot-jpa)
 
 # [Redisson](../spring-boot/spring-boot-redisson)
 

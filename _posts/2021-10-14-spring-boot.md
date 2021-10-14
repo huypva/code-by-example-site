@@ -20,7 +20,7 @@ layout: post
 
 # [Kafka](../spring-boot/spring-boot-kafka)
 
-# [RESTfull API](../spring-boot/spring-boot-rest)
+# [RESTful API](../spring-boot/spring-boot-rest)
 
 # [gRPC API](../spring-boot/spring-boot-grpc)
 

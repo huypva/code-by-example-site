@@ -1,5 +1,5 @@
 ---
-title: Spring Boot - Aop
+title: Spring Boot - AOP
 author: HuyPVA
 date: 2021-09-23
 category: spring-boot

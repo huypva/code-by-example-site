@@ -2,7 +2,7 @@
 title: Spring Boot + Cassandra
 author: HuyPVA
 date: 2021-10-14
-category: Spring Boot
+category: spring-boot
 layout: post
 source: https://github.com/huypva/spring-boot-cassandra-example
 ---

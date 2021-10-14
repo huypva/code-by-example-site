@@ -13,32 +13,32 @@
 
             <li class="divider"></li>
 
-            {% assign reversed_posts = site.posts | reverse %}
+<!--            {% assign reversed_posts = site.posts | reverse %}-->
 
             {% assign category_posts = site.posts | where: site.posts.category == "category"  | reverse %}
 
+            {% assign others_posts = site.posts | where: site.posts.category == "others"  | reverse %}
+
             {% for post in category_posts %}
-<!--                {% if post.category == "category" %}-->
-                    {% if page.url == post.url %}
-                    <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
-                    {% else %}
-                    <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
-                    {% endif %}
-                        <a href="{{site.baseurl}}{{post.url}}" >
-                            {{ post.title | escape }}
-                        </a>
-                        {% if site.toc.enabled %}
-                            {% if page.url == post.url %}
-                                {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
-                            {% endif %}
+                {% if page.url == post.url %}
+                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                {% else %}
+                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                {% endif %}
+                    <a href="{{site.baseurl}}{{post.url}}" >
+                        {{ post.title | escape }}
+                    </a>
+                    {% if site.toc.enabled %}
+                        {% if page.url == post.url %}
+                            {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
                         {% endif %}
-                    </li>
-<!--                {% endif %}-->
+                    {% endif %}
+                </li>
             {% endfor %}
 
             <li class="divider"></li>
-            {% for post in reversed_posts %}
-                {% if post.category == "others" and post.url != "/others/about-me" %}
+            {% for post in others_posts %}
+<!--                {% if post.category == "others" and post.url != "/others/about-me" %}-->
                     {% if page.url == post.url %}
                     <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
                     {% else %}
@@ -53,7 +53,7 @@
                             {% endif %}
                         {% endif %}
                     </li>
-                {% endif %}
+<!--                {% endif %}-->
             {% endfor %}
 
             <li class="divider"></li>

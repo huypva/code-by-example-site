@@ -147,7 +147,7 @@ lombok.addLombokGeneratedAnnotation = true
 
 - Chạy unit test và report trên sonar
 
-```shell script
+```shell
 $ ../mvnw clean package
 $ ../mvnw sonar:sonar \
   -Dsonar.projectKey=io.codebyexample:unit-test-sonar-qube \

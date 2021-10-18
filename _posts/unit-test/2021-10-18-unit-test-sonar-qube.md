@@ -8,7 +8,7 @@ source: https://github.com/huypva/unit-test-sonar-qube-example
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot_icon.png"/>
+    <img src="../assets/images/sonar_qube/sonar_qube.png"/>
 </div>
 
 > Hướng dẫn tích hợp SonarQube trong SpringBoot application

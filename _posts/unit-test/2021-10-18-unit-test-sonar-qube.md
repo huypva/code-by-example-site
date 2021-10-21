@@ -145,7 +145,7 @@ config.stopBubbling = true
 lombok.addLombokGeneratedAnnotation = true
 ```
 
-- Chạy unit test và report trên sonar
+- Chạy unit test và report trên sonar với giá trị sonar.login bằng token đã lưu bên trên
 
 ```shell
 $ ../mvnw clean package

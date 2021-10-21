@@ -8,7 +8,7 @@ source: https://github.com/huypva/unit-test-junit-5-example
 ---
 
 <div align="center">
-    <img src="../assets/images/sonar_qube/sonar_qube.png"/>
+    <img src="../assets/images/junit_5.png"/>
 </div>
 
 > Hướng dẫn thực hiện UnitTest trong SpringBoot application
@@ -28,7 +28,7 @@ source: https://github.com/huypva/unit-test-junit-5-example
 Trong Spring Boot version 2.2.6 đã có sẵn thư viện cho junit 5
 
 <div align="center">
-    <img src="../assets/images/junit-5-libs.png"/>
+    <img src="../assets/images/junit_5_libs.png"/>
 </div>
 
 Nếu không bạn có thể add thêm dependency như sau

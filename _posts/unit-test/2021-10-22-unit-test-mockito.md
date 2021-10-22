@@ -11,7 +11,7 @@ source: https://github.com/huypva/unit-test-mockito-example
     <img src="../assets/images/mockito.png"/>
 </div>
 
-> Hướng dẫn thực hiện UnitTest trong SpringBoot application
+> Hướng dẫn sử dụng Mockito trong SpringBoot application
 
 ## Dependency
 

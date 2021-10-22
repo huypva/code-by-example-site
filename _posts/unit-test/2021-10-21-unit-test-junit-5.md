@@ -97,6 +97,24 @@ Ví dụ:
   }
 ```
 
+## Assertions
+
+- Assert 2 value
+
+```java
+import static org.junit.jupiter.api.Assertions.assertEquals;
+//...
+assertEquals(expectValue, actualValue);
+```
+
+- Assert 2 object
+
+```java
+import static org.assertj.core.api.Assertions.assertThat;
+//...
+assertThat(expectObject).usingRecursiveComparison().isEqualTo(actualObject);
+```
+
 ## Một số lưu ý
 
 - Một method test chỉ test cho 1 trường hợp, nó phải nhỏ, dễ đọc

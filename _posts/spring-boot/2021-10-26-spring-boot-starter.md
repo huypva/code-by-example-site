@@ -15,7 +15,7 @@ source: https://github.com/huypva/spring-boot-starter-example
 
 ## A Starter project
 
-Project bao gồm 3 class chính:
+- Project bao gồm 3 class chính:
     - Class `SampleProperties`: chưa các variable được load từ file config application.yml
     - Class `SampleService`: sample service cần sử dụng
     - Class `SampleAutoConfiguration`: thực hiện việc auto-configuration

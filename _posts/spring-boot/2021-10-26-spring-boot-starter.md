@@ -92,7 +92,7 @@ sample-code:
   value: Sample Value
 ```
 
-- Get bean `SampleService` để sử dụng
+- Lấy bean `SampleService` để sử dụng
 
 ```java
 @SpringBootApplication

@@ -35,3 +35,5 @@ layout: post
 # [Kafka with multiple brokers](../spring-boot/spring-boot-kafka-multiple-brokers)
 
 # [Cassandra](../spring-boot/spring-boot-cassandra)
+
+# [Spring Boot Starter](../spring-boot/spring-boot-stater)

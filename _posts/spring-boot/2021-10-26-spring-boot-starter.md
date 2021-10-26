@@ -11,7 +11,7 @@ source: https://github.com/huypva/spring-boot-starter-example
     <img src="../assets/images/spring_boot_icon.png"/>
 </div>
 
-> Hướng dẫn viết library Spring Boot Starter
+> Hướng dẫn viết một library Spring Boot Starter
 
 ## A Starter project
 

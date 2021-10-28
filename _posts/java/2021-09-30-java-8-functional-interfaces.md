@@ -2,13 +2,13 @@
 title: Java 8 - Functional Interfaces
 author: HuyPVA
 date: 2021-09-30
-category: java-8
+category: java
 layout: post
 source: https://github.com/huypva/java-8-functional-interfaces-example
 ---
 
 <div align="center">
-    <img src="../assets/images/functional_interfaces.png"/>
+    <img src="../assets/images/java/functional_interfaces.png"/>
 </div>
 
 > Function Interfaces trong Java 8

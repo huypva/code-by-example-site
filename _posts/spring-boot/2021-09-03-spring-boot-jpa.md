@@ -8,7 +8,7 @@ source: https://github.com/huypva/spring-boot-jpa-example
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot_icon.png"/>
+    <img src="../assets/images/spring_boot/spring_boot_icon.png"/>
 </div>
 
 Hướng dẫn giao tiếp database trong Spring Boot

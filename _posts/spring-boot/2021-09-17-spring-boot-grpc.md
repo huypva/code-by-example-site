@@ -8,7 +8,7 @@ source: https://github.com/huypva/spring-boot-grpc-example
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot_icon.png"/>
+    <img src="../assets/images/spring_boot/spring_boot_icon.png"/>
 </div>
 
 > Hướng dẫn xây dựng gRPC service bằng Spring Boot

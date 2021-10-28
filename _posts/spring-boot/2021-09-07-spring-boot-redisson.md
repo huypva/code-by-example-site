@@ -8,7 +8,7 @@ source: https://github.com/huypva/spring-boot-redisson-example
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot_icon.png"/>
+    <img src="../assets/images/spring_boot/spring_boot_icon.png"/>
 </div>
 
 > Hướng dẫn tích hợp Redis bằng Redisson client trong Spring Boot application

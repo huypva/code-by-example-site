@@ -8,7 +8,7 @@ source: https://github.com/huypva/unit-test-sonar-qube-example
 ---
 
 <div align="center">
-    <img src="../assets/images/sonar_qube/sonar_qube.png"/>
+    <img src="../assets/images/unit_test/sonar_qube/sonar_qube.png"/>
 </div>
 
 > Hướng dẫn tích hợp SonarQube trong SpringBoot application
@@ -73,19 +73,19 @@ networks:
 Open setting account:
 
 <div align="center">
-    <img src="../assets/images/sonar_qube/setting.png"/>
+    <img src="../assets/images/unit_test/sonar_qube/setting.png"/>
 </div>
 
 Tạo token:
 
 <div align="center">
-    <img src="../assets/images/sonar_qube/create_token.png"/>
+    <img src="../assets/images/unit_test/sonar_qube/create_token.png"/>
 </div>
 
 Lưu lại kết qua token:
 
 <div align="center">
-    <img src="../assets/images/sonar_qube/result.png"/>
+    <img src="../assets/images/unit_test/sonar_qube/result.png"/>
 </div>
 
 ## Setup report trong project

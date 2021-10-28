@@ -7,11 +7,6 @@ layout: post
 ---
 
 <div align="center">
-    <img src="../assets/images/theory/sonar_qube.png"/>
-</div>
-
-
-<div align="center">
     <img src="../assets/images/theory/pessimistic_optimistic.png"/>
 </div>
 
@@ -31,7 +26,7 @@ layout: post
 
 - Là cơ chế sử dụng version (hoặc một giá trị tương đương) để kiểm tra record có bị thay đổi không trước khi write nó.
 
-- Cách thực hiện như sau
+- Cách thực hiện
 <div align="center">
     <img src="../assets/images/theory/optimistic.png"/>
 </div>  

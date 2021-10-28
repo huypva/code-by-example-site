@@ -8,7 +8,7 @@ source: https://github.com/huypva/singleton--pattern-example
 ---
 
 <div align="center">
-    <img src="../assets/images/singleton.png"/>
+    <img src="../assets/images/java/singleton.png"/>
 </div>
 
 - *Singleton* là pattern tạo ra một instance duy nhất của một class

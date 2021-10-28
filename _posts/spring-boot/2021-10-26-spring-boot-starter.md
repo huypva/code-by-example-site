@@ -8,7 +8,7 @@ source: https://github.com/huypva/spring-boot-starter-example
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot_icon.png"/>
+    <img src="../assets/images/spring_boot/spring_boot_icon.png"/>
 </div>
 
 > Hướng dẫn viết một library Spring Boot Starter

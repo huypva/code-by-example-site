@@ -2,13 +2,13 @@
 title: Java 8 - Stream
 author: HuyPVA
 date: 2021-10-03
-category: java-8
+category: java
 layout: post
 source: https://github.com/huypva/java-8-streams-example
 ---
 
 <div align="center">
-    <img src="../assets/images/stream.png"/>
+    <img src="../assets/images/java/stream.png"/>
 </div>
 
 > Stream trong Java 8

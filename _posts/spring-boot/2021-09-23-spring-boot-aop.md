@@ -8,7 +8,7 @@ source: https://github.com/huypva/spring-boot-aop-example
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot_icon.png"/>
+    <img src="../assets/images/spring_boot/spring_boot_icon.png"/>
 </div>
 
 > Hướng dẫn sử dụng Spring AOP để xử lý cho annotation trong Spring Boot application

@@ -8,7 +8,7 @@ source: https://github.com/huypva/unit-test-mockito-example
 ---
 
 <div align="center">
-    <img src="../assets/images/mockito.png"/>
+    <img src="../assets/images/unit_test/mockito.png"/>
 </div>
 
 > Hướng dẫn sử dụng Mockito trong SpringBoot application

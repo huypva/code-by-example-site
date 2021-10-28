@@ -8,7 +8,7 @@ source: https://github.com/huypva/unit-test-junit-5-example
 ---
 
 <div align="center">
-    <img src="../assets/images/junit_5.png"/>
+    <img src="../assets/images/unit_test/junit_5.png"/>
 </div>
 
 > Hướng dẫn thực hiện UnitTest trong SpringBoot application

@@ -7,11 +7,37 @@ layout: post
 ---
 
 <div align="center">
-    <img src="../assets/images/sonar_qube/sonar_qube.png"/>
+    <img src="../assets/images/theory/sonar_qube.png"/>
+</div>
+
+
+<div align="center">
+    <img src="../assets/images/theory/pessimistic_optimistic.png"/>
 </div>
 
 > Phân biệt Pessimistic và Optimistic Lock 
 
 ## Pessimistic Lock
 
+- Là cơ chế sử dụng lock record khi write record
+
+- Các bước thực hiện
+<div align="center">
+    <img src="../assets/images/theory/pessimistic.png"/>
+</div>    
+  
+
 ## Optimistic Lock
+
+- Là cơ chế sử dụng version (hoặc một giá trị tương đương) để kiểm tra record có bị thay đổi không trước khi write nó.
+
+- Các bước thực hiện như sau
+<div align="center">
+    <img src="../assets/images/theory/optimistic.png"/>
+</div>  
+
+## Reference
+
+- https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking
+- https://martinfowler.com/eaaCatalog/optimisticOfflineLock.html
+- https://martinfowler.com/eaaCatalog/pessimisticOfflineLock.html

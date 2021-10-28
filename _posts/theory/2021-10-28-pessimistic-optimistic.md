@@ -21,7 +21,7 @@ layout: post
 
 - Là cơ chế sử dụng lock record khi write record
 
-- Các bước thực hiện
+- Cách thực hiện
 <div align="center">
     <img src="../assets/images/theory/pessimistic.png"/>
 </div>    
@@ -31,10 +31,21 @@ layout: post
 
 - Là cơ chế sử dụng version (hoặc một giá trị tương đương) để kiểm tra record có bị thay đổi không trước khi write nó.
 
-- Các bước thực hiện như sau
+- Cách thực hiện như sau
 <div align="center">
     <img src="../assets/images/theory/optimistic.png"/>
 </div>  
+
+## Usage
+
+- Optimistic Locking
+    - Sử dụng trong trường hợp ít xảy ra conflict giữa 2 transaction
+    - Chỉ kiểm tra data khi write (UPDATE, DELECT) nên gây ra inconsistent khi read dữ liệu
+    
+- Pessimistic Locking
+    - Sử dụng trong trường hợp có khả năng xảy ra conflict cao
+    - Performaince thấp do chi phí acquire lock
+    - Cẩn thận khi áp dụng, có khả năng xảy ra deadlock khi acquire trên nhiều data
 
 ## Reference
 

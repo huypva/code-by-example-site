@@ -27,3 +27,7 @@ layout: post
 <div align="center">
     <img src="../assets/images/theory/eventual_consistency.png"/>
 </div>
+
+## Reference
+
+- https://www.cohesity.com/blogs/strict-vs-eventual-consistency/

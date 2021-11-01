@@ -1,0 +1,11 @@
+@startuml
+
+[-> Resouce_1: write/update data
+activate Resouce_1
+[<-- Resouce_1: result
+deactivate Resouce_1
+Resouce_1 -> Resouce_2: write/update data
+activate Resouce_2
+return result
+
+@enduml

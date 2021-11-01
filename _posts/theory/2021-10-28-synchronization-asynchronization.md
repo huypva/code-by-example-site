@@ -33,7 +33,7 @@ layout: post
     <img src="../assets/images/theory/message.png"/>
 </div>
 
-- Với một số api có business logic lâu
+- Với một số api có business logic khá dài
     + Client gửi request lên Server
     + Server nhận request, tạo unique id, public một message vào một Internal Message Broker và trả id về cho Client
     + Server subscribe message từ Internal Message Broker, thực hiện business logic và lưu kết quả vào Cache

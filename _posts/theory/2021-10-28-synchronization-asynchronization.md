@@ -1,17 +1,47 @@
 ---
-title: Theory - Pessimistic vs Optimistic
+title: Theory - Sync vs Async
 author: HuyPVA
 date: 2021-10-18
 category: theory
 layout: post
 ---
 
-<div align="center">
-    <img src="../assets/images/sonar_qube/sonar_qube.png"/>
-</div>
-
 > Phân biệt Pessimistic và Optimistic Lock 
 
-## Pessimistic Lock
+## Synchronous vs asynchronous processing
 
-## Optimistic Lock
+- Synchronous processing (xử lý đồng bộ) là một chương trình chạy tuần tự, một process sau phải chờ process trước thực thi xong mới bắt đầu thực hiện. 
+
+- Còn với asynchronous thì process sau có thể thực hiện mà không cần chờ process trước đó, sau khi process trước xử lý xong sẽ thông báo kết quả sau cho chương trình
+
+<div align="center">
+    <img src="../assets/images/theory/sync_async.png"/>
+</div>
+
+
+## Synchronous vs asynchronous communication    
+
+- Synchronous: các service giao tiếp với nhau thông qua REST/gRPC API. Client sẽ call api và đợi response từ Server
+
+<div align="center">
+    <img src="../assets/images/theory/api.png"/>
+</div>
+
+- Asynchronous: giao tiếp với nhau thông qua message broker như Kafka, RabbitMQ,... thường dùng trong giao tiếp service nội bộ 
+
+<div align="center">
+    <img src="../assets/images/theory/message.png"/>
+</div>
+
+- Với một số api có business logic lâu
+    + Client gửi request lên Server
+    + Server nhận request, tạo unique id, public một message vào một Internal Message Broker và trả id về cho Client
+    + Server subscribe message từ Internal Message Broker, thực hiện business logic và lưu kết quả vào Cache
+    + Client định kỳ call Server lấy kết quả của request ban đầu, Server sẽ lấy message từ Cache và response cho Client
+    
+<div align="center">
+    <img src="../assets/images/theory/long_api.png"/>
+</div>
+
+## Reference
+- https://www.koyeb.com/blog/introduction-to-synchronous-and-asynchronous-processing

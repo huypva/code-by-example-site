@@ -14,7 +14,7 @@ layout: post
 
 ## Consistency
 
-- Consistency (tính nhất quán): dữ liệu của một hay nhiều resource nhất quán với nhau, cùng trạng thái
+- Consistency(tính nhất quán): dữ liệu của một hay nhiều resource nhất quán với nhau, cùng trạng thái
 
 - Strong Consistency(tính nhất quán mạnh): một cập nhập, thay đổi cần phải được thực hiện trên toàn bộ, sau khi thực hiện thì tất cả các dữ liệu cùng trạng thái trước khi xử lý tiếp theo
 

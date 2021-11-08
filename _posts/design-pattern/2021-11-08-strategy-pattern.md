@@ -1,8 +1,8 @@
 ---
-title: Theory - Strategy Pattern
+title: Strategy Pattern
 author: HuyPVA
 date: 2021-11-08
-category: theory
+category: design-pattern
 layout: post
 ---
 

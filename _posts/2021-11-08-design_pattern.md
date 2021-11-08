@@ -11,6 +11,6 @@ layout: post
 </div>
 
 
-## [Singleton Pattern](../design_pattern/singleton-pattern)
+## [Singleton Pattern](../design-pattern/singleton-pattern)
 
-## [Strategy Pattern](../design_pattern/strategy_icon)
+## [Strategy Pattern](../design-pattern/strategy-pattern)

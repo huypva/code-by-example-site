@@ -23,9 +23,10 @@ layout: post
   - Strategy: định nghĩa chức năng xử lý
   - ConcreteStrategy: class xử lý cho từng chức năng cụ thể
   - Context: chứa đối tượng Strategy, nhận yêu cầu từ Client và thực thi chức năng
+
 ## Demo
 
-- Code example: https://github.com/huypva/java-strategy-pattern-example
+- Code example [ở đây](https://github.com/huypva/java-strategy-pattern-example)
 
 ## Reference
 

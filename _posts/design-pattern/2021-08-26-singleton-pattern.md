@@ -4,7 +4,7 @@ author: HuyPVA
 date: 2021-08-26
 category: java
 layout: post
-source: https://github.com/huypva/singleton--pattern-example
+source: https://github.com/huypva/singleton-pattern-example
 ---
 
 <div align="center">

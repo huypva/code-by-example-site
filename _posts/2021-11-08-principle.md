@@ -11,4 +11,4 @@ layout: post
 </div>
 
 
-## [12factor](../principle/12-factor)
+## [12factor.net](../principle/12-factor)

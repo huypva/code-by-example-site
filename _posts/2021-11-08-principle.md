@@ -7,8 +7,10 @@ layout: post
 ---
 
 <div align="center">
-    <img src="../assets/images/design_pattern/design_pattern.png"/>
+    <img src="../assets/images/principle/principle.png"/>
 </div>
 
 
 ## [12factor.net](../principle/12-factor)
+
+## [S.O.L.I.D](../principle/solid)

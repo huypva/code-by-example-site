@@ -14,3 +14,5 @@ layout: post
 ## [12factor.net](../principle/12-factor)
 
 ## [S.O.L.I.D](../principle/solid)
+
+## [KISS - YAGNI - DRY](../principle/kiss-yagni-dry)

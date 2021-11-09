@@ -7,7 +7,7 @@ layout: post
 ---
 
 <div align="center">
-    <img src="../assets/images/sonar_qube/sonar_qube.png"/>
+    <img src="../assets/images/principle/principle.png"/>
 </div>
 
 ## KISS Principle

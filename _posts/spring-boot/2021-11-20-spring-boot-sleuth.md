@@ -31,6 +31,7 @@ source: https://github.com/huypva/spring-boot-sleuth-example
 <properties>
     <spring-cloud.version>2020.0.4</spring-cloud.version>
 </properties>
+
 <dependencies>
     ...
     <dependency>

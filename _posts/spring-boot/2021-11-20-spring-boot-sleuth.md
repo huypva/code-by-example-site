@@ -27,30 +27,30 @@ source: https://github.com/huypva/spring-boot-sleuth-example
     
 - Thêm dependency [spring-cloud-starter-sleuth][1] trong mỗi service
 
-```html
-	<properties>
-		<spring-cloud.version>2020.0.4</spring-cloud.version>
-	</properties>
-	<dependencies>
-        ...
+```xml
+<properties>
+    <spring-cloud.version>2020.0.4</spring-cloud.version>
+</properties>
+<dependencies>
+    ...
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-sleuth</artifactId>
+    </dependency>
+    ...
+</dependencies>
+
+<dependencyManagement>
+    <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-sleuth</artifactId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>${spring-cloud.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
         </dependency>
-        ...
-	</dependencies>
-    
-    <dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+    </dependencies>
+</dependencyManagement>
 ```
 
 ## Service A  

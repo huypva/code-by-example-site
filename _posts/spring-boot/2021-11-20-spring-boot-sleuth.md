@@ -88,7 +88,23 @@ spring:
       probability: 1.0
 ```
 
-- Sử dụng FeignClient để tạo http client gọi đến ServiceB 
+- Cấu hình service B và C trong application.yml
+
+```yaml
+serviceb:
+  url: http://localhost:8082
+  path:
+    greet: /greet/{id}
+grpc:
+  client:
+    servicec:
+      address: static://localhost:8183
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+```
+
+- Sử dụng FeignClient để tạo HTTP client gọi đến ServiceB 
     
 ```java
 @FeignClient(value = "serviceb", url = "${serviceb.url}")
@@ -100,7 +116,7 @@ public interface ServiceBClient {
 }
 ```
 
-- Viết grpc client gọi đến ServiceC
+- Viết gRPC client gọi đến ServiceC
 
 ```java
 import net.devh.boot.grpc.client.inject.GrpcClient;
@@ -121,16 +137,14 @@ import net.devh.boot.grpc.client.inject.GrpcClient;
 
 ## Service B
 
-- Cấu hình client trong file application.yml
+- Cấu hình port HTTP
 
 ```yaml
-serviceb:
-  url: http://localhost:8082
-  path:
-    greet: /greet/{id}
+server:
+  port : 8082
 ```
 
-- Viết controller đơn giản
+- Viết Rest controller đơn giản
 
 ```java
 @RestController
@@ -146,16 +160,12 @@ public class Controller {
 
 ## ServiceC
 
-- Cấu hình grpc client trong file application.yml
+- Cấu hình port gRPC trong file application.yml
 
 ```yaml
 grpc:
-  client:
-    servicec:
-      address: static://localhost:8183
-      enableKeepAlive: true
-      keepAliveWithoutCalls: true
-      negotiationType: plaintext
+  server:
+    port: 8183
 ```
 
 - Viết gRPC controller
@@ -186,7 +196,7 @@ public class GrpcController extends ServiceCGrpc.ServiceCImplBase {
 
 - Gửi request test đến ServiceA, trong ServiceA sẽ gọi đến ServiceB
 
-```shell script
+```shell
 $ curl http://localhost:8081/greetb/1
 ```
 
@@ -202,7 +212,7 @@ chung span 48c90d4d61668476
 
 - Gửi request test đến ServiceA, trong ServiceA sẽ gọi đến ServiceC
 
-```shell script
+```shell
 $ curl http://localhost:8081/greetc/1
 ```
 
@@ -264,7 +274,8 @@ spring:
 </div>
 
 - Ngoài ra, có thể sử dụng Jeager server để hiện thị report
-Setup Jeager server bằng docker
+    - Setup Jeager server bằng docker-compose và cho phép nhận report theo format của zipkin
+    
 ```yaml
 version: "3.4"
 services:

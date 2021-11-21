@@ -8,12 +8,17 @@ source: https://github.com/huypva/spring-boot-sleuth-example
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot/spring_boot_icon.png"/>
+    <img src="../assets/images/spring_boot/sleuth.png"/>
 </div>
 
 > Hướng dẫn tích hợp [Spring Cloud Sleuth](https://spring.io/projects/spring-cloud-sleuth) trong ứng dụng Spring Boot
 
 ## Mô hình
+
+<div align="center">
+    <img src="../assets/images/spring_boot/sleuth_architecture.png"/>
+</div>
+
 - Trong ví dụ này bao gồm 3 service
     - ServiceA: một service public 2 api và gọi vào ServiceB, ServiceC
     - ServiceB: một http service

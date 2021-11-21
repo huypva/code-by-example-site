@@ -61,24 +61,25 @@ source: https://github.com/huypva/spring-boot-sleuth-example
     - [grpc-spring-boot-starter][3]: dùng chp grpc client 
     
 ```xml
-    <properties>
-    		<net.devh.grpc.starter.version>2.12.0.RELEASE</net.devh.grpc.starter.version>
-    </properties>
-    <dependencies>
-        <dependency>
-            <groupId>net.devh</groupId>
-            <artifactId>grpc-spring-boot-starter</artifactId>
-            <version>${net.devh.grpc.starter.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-		<dependency>
-			<groupId>io.zipkin.brave</groupId>
-			<artifactId>brave-instrumentation-grpc</artifactId>
-		</dependency>
-    </dependencies>
+<properties>
+        <net.devh.grpc.starter.version>2.12.0.RELEASE</net.devh.grpc.starter.version>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>net.devh</groupId>
+        <artifactId>grpc-spring-boot-starter</artifactId>
+        <version>${net.devh.grpc.starter.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-openfeign</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>io.zipkin.brave</groupId>
+        <artifactId>brave-instrumentation-grpc</artifactId>
+    </dependency>
+</dependencies>
 ```
 
 Mặc định OpenFeign tích hợp sẵn sleuth, còn với grpc cần sử dụng thêm dependency [brave-instrumentation-grpc][4]

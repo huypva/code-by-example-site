@@ -37,3 +37,5 @@ layout: post
 # [Cassandra](../spring-boot/spring-boot-cassandra)
 
 # [Spring Boot Starter](../spring-boot/spring-boot-starter)
+
+# [Spring Boot Starter](../spring-boot/spring-boot-sleuth)

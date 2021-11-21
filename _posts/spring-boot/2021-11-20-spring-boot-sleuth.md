@@ -4,7 +4,7 @@ author: HuyPVA
 date: 2021-11-20
 category: spring-boot
 layout: post
-source: https://github.com/huypva/spring-boot-sleyth-example
+source: https://github.com/huypva/spring-boot-sleuth-example
 ---
 
 <div align="center">

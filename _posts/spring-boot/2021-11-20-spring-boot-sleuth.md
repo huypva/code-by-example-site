@@ -294,7 +294,7 @@ services:
       - COLLECTOR_ZIPKIN_HTTP_PORT=9411
 ```
 
-Test và xem kết quả trên Jeager UI tại địa chỉ [http://localhost:16686/][6]
+Test và xem kết quả trên Jeager UI tại địa chỉ <http://localhost:16686/>
 
 <div align="center">
     <img src="../assets/images/spring_boot/jaeger_a_b.png"/>

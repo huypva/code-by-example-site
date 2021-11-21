@@ -265,7 +265,7 @@ spring:
     base-url: http://localhost:9411
 ```
 
-- Send request và mở Zipkin UI tại địa chỉ [http://localhost:9411/][5] lên xem report
+- Send request và mở Zipkin UI tại địa chỉ <http://localhost:9411/> lên xem report
 <div align="center">
     <img src="../assets/images/spring_boot/zipkin_service_b.png"/>
 </div>
@@ -304,14 +304,12 @@ Test và xem kết quả trên Jeager UI tại địa chỉ <http://localhost:16
 </div>
 
 ## Reference
-- https://spring.io/projects/spring-cloud-sleuth
-- https://www.baeldung.com/spring-cloud-sleuth-single-application
-- https://docs.spring.io/spring-cloud-sleuth/docs/current-SNAPSHOT/reference/html/integrations.html#sleuth-openfeign-integration
-- https://github.com/yidongnan/grpc-spring-boot-starter
+- <https://spring.io/projects/spring-cloud-sleuth>
+- <https://www.baeldung.com/spring-cloud-sleuth-single-application>
+- <https://docs.spring.io/spring-cloud-sleuth/docs/current-SNAPSHOT/reference/html/integrations.html#sleuth-openfeign-integration>
+- <https://github.com/yidongnan/grpc-spring-boot-starter>
 
 [1]: https://cloud.spring.io/spring-cloud-sleuth
 [2]: https://docs.spring.io/spring-cloud-sleuth/docs/current-SNAPSHOT/reference/html/integrations.html#sleuth-openfeign-integration
 [3]: https://yidongnan.github.io/grpc-spring-boot-starter/en/brave.html
 [4]: https://github.com/openzipkin/brave/tree/master/instrumentation/grpc
-[5]: http://localhost:9411/
-[6]: http://localhost:16686/

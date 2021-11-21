@@ -1,5 +1,5 @@
 ---
-title: Spring Boot - Spring Boot Sleuth
+title: Spring Boot - Spring Cloud Sleuth
 author: HuyPVA
 date: 2021-11-20
 category: spring-boot

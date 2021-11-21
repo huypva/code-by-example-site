@@ -51,8 +51,8 @@ source: https://github.com/huypva/spring-boot-sleuth-example
 ## Service A  
 
 - Thêm dependencies sử dụng trong grpc
-    - [org.springframework.cloud:spring-cloud-starter-openfeign][2]: dành cho http client
-    - [net.devh:grpc-spring-boot-starter][3]: dùng chp grpc client 
+    - [spring-cloud-starter-openfeign][2]: dành cho http client
+    - [grpc-spring-boot-starter][3]: dùng chp grpc client 
     
 ```xml
     <properties>
@@ -75,7 +75,7 @@ source: https://github.com/huypva/spring-boot-sleuth-example
     </dependencies>
 ```
 
-Mặc định OpenFeign tích hợp sẵn sleuth, còn với grpc cần sử dụng thêm dependency [io.zipkin.brave:brave-instrumentation-grpc][4]
+Mặc định OpenFeign tích hợp sẵn sleuth, còn với grpc cần sử dụng thêm dependency [brave-instrumentation-grpc][4]
 
 - Cấu hình sleuth trong application.yml
 
@@ -208,7 +208,7 @@ và service B
 ```text
 2021-11-20 21:01:03.939  INFO [service-B,48c90d4d61668476,c73d7b8f5c34adc6] 2429 --- [nio-8082-exec-1] i.c.serviceb.entrypoint.Controller       : ServiceB.greet
 ```
-chung span 48c90d4d61668476
+chung TraceId 48c90d4d61668476
 
 - Gửi request test đến ServiceA, trong ServiceA sẽ gọi đến ServiceC
 
@@ -224,7 +224,7 @@ và service C
 ```text
 2021-11-20 21:02:54.340  INFO [service-C,9b6f0e1e5e5ca2da,9cd977fdc2849bb4] 2100 --- [ault-executor-2] i.c.servicec.entrypoint.GrpcController   : ServiceC.greet 1
 ```
-chung span 9b6f0e1e5e5ca2da
+chung TraceId 9b6f0e1e5e5ca2da
 
 ## Report lên Zipkin, Jaeger
 

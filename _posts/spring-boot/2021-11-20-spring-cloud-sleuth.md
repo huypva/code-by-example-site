@@ -4,7 +4,7 @@ author: HuyPVA
 date: 2021-11-20
 category: spring-boot
 layout: post
-source: https://github.com/huypva/spring-boot-sleuth-example
+source: https://github.com/huypva/spring-cloud-sleuth-example
 ---
 
 <div align="center">
@@ -13,7 +13,7 @@ source: https://github.com/huypva/spring-boot-sleuth-example
 
 > Hướng dẫn tích hợp [Spring Cloud Sleuth](https://spring.io/projects/spring-cloud-sleuth) trong ứng dụng Spring Boot
 
-## Mô hình
+## Example
 
 <div align="center">
     <img src="../assets/images/spring_boot/sleuth_architecture.png"/>
@@ -21,8 +21,8 @@ source: https://github.com/huypva/spring-boot-sleuth-example
 
 - Trong ví dụ này bao gồm 3 service
     - ServiceA: một service public 2 api và gọi vào ServiceB, ServiceC
-    - ServiceB: một http service
-    - ServiceC: một grpc service
+    - ServiceB: http service
+    - ServiceC: grpc service
     
     
 - Thêm dependency [spring-cloud-starter-sleuth][1] trong mỗi service
@@ -57,8 +57,8 @@ source: https://github.com/huypva/spring-boot-sleuth-example
 ## Service A  
 
 - Thêm dependencies sử dụng trong grpc
-    - [spring-cloud-starter-openfeign][2]: dành cho http client
-    - [grpc-spring-boot-starter][3]: dùng chp grpc client 
+    - [spring-cloud-starter-openfeign][2]: http client
+    - [grpc-spring-boot-starter][3]: grpc client 
     
 ```xml
 <properties>
@@ -82,7 +82,7 @@ source: https://github.com/huypva/spring-boot-sleuth-example
 </dependencies>
 ```
 
-Mặc định OpenFeign tích hợp sẵn sleuth, còn với grpc cần sử dụng thêm dependency [brave-instrumentation-grpc][4]
+Mặc định OpenFeign tích hợp sẵn sleuth, còn với gRPC cần sử dụng thêm dependency [brave-instrumentation-grpc][4]
 
 - Cấu hình sleuth trong application.yml
 

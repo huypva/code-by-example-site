@@ -38,4 +38,4 @@ layout: post
 
 # [Spring Boot Starter](../spring-boot/spring-boot-starter)
 
-# [Spring Boot Sleuth](../spring-boot/spring-boot-sleuth)
+# [Spring Cloud Sleuth](../spring-boot/spring-cloud-sleuth)

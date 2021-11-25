@@ -24,17 +24,19 @@ source: https://github.com/huypva/spring-boot-prometheus-grafana-example
 - Thêm dependency trong file pom.xml
 
 ```xml
-        <!--  actuator  -->
-        <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-    
-    		<!--  micrometer  -->
-        <dependency>
-          <groupId>io.micrometer</groupId>
-          <artifactId>micrometer-registry-prometheus</artifactId>
-        </dependency>
+<dependencies>
+    <!--  actuator  -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+
+    <!--  micrometer  -->
+    <dependency>
+      <groupId>io.micrometer</groupId>
+      <artifactId>micrometer-registry-prometheus</artifactId>
+    </dependency>
+</dependencies>
 ```
 
 - Thêm configuration cho micrometer trong file application.yml

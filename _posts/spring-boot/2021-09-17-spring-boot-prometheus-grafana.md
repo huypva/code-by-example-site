@@ -148,6 +148,7 @@ $ docker-compose up -d
 ![setup ds prometheus](../../assets/images/spring_boot/prometheus_grafana/setup_ds_prometheus.png)
 
 - Tạo dashboard cho JVM metric bằng cách import id [4701](https://grafana.com/grafana/dashboards/4701)
+
 ![jvm_1](../../assets/images/spring_boot/prometheus_grafana/import_jvm_metric_1.png)
 ![jvm_2](../../assets/images/spring_boot/prometheus_grafana/import_jvm_metric_2.png)
 

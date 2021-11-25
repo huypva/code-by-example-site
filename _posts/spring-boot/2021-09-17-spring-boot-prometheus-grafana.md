@@ -11,12 +11,12 @@ source: https://github.com/huypva/spring-boot-prometheus-grafana-example
     <img src="../assets/images/spring_boot/spring_boot_icon.png"/>
 </div>
 
-> Hướng dẫn monitor Spring Boot application bằng Promethues và Grafana
+> Hướng dẫn monitor Spring Boot application bằng Prometheus và Grafana
 
 - Thư viện sử dụng
   - [spring-boot-actuator](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html)
   - [Micrometer.io](https://micrometer.io/)
-  - [Promethues](https://prometheus.io/)
+  - [Prometheus](https://prometheus.io/)
   - [Grafana](https://grafana.com/)
 
 ## Tạo một Spring Boot application 

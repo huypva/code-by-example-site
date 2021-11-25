@@ -91,13 +91,6 @@ process_cpu_usage 0.009735744089012517
 version: "3.4"
 
 services:
-  spring-boot-prometheus-grafana:
-    build: ./spring-boot-prometheus-grafana
-    ports:
-      - "8081:8081"
-    container_name: spring-boot-prometheus-grafana
-    networks:
-      - prometheus-grafana-network
   prometheus:
     image: "prom/prometheus"
     volumes:
@@ -141,7 +134,7 @@ $ docker-compose up -d
 ```
 
 - Mở browser và truy cập tool qua link sau
-    - Promethues: http://localhost:9090/
+    - Prometheus: http://localhost:9090/
     - Grafana: http://localhost:3000/ , tài khoản mặc định là admin/admin
 
 ## Tạo dashboard trên Grafana
@@ -150,15 +143,15 @@ $ docker-compose up -d
 
 - Setup Prometheus datasource
 
-![setup ds prometheus](../../assets/images/spring_boot/spring_boot_prometheus_grafana/setup_ds_prometheus.png)
+![setup ds prometheus](../../assets/images/spring_boot/prometheus_grafana/setup_ds_prometheus.png)
 
 - Tạo dashboard cho JVM metric bằng cách import id [4701](https://grafana.com/grafana/dashboards/4701)
-![jvm_1](../../assets/images/spring_boot_prometheus_grafana/import_jvm_metric_1.png)
-![jvm_2](../../assets/images/spring_boot_prometheus_grafana/import_jvm_metric_2.png)
+![jvm_1](../../assets/images/spring_boot/prometheus_grafana/import_jvm_metric_1.png)
+![jvm_2](../../assets/images/spring_boot/prometheus_grafana/import_jvm_metric_2.png)
 
 - Dashboard hiển thị như bên dưới
 
-![jmv metrics](../../assets/images/spring_boot/spring_boot_prometheus_grafana/grafana_jvm_metrics.png)
+![jmv metrics](../../assets/images/spring_boot/prometheus_grafana/grafana_jvm_metrics.png)
 
 
 ### Dashboard monitor api 
@@ -171,7 +164,7 @@ sum(increase(http_server_requests_seconds_bucket{application="$application", ins
 sum(increase(http_server_requests_seconds_bucket{application="$application", instance="$instance"}[1m]))
 ```
 
-    + Metric 2
+Metric 2
     
 ```text
 sum(increase(http_server_requests_seconds_bucket{application="$application", instance="$instance", status!="200"}[1m]))
@@ -181,6 +174,7 @@ sum(increase(http_server_requests_seconds_bucket{application="$application", ins
 
 
 - Metric B
+
 ```text
 sum(increase(http_server_requests_seconds_bucket{uri="/greeting", status!="200"}[1m]))
 /
@@ -199,4 +193,4 @@ sum(rate(http_server_requests_seconds_bucket{application="$application", instanc
 histogram_quantile(0.99, sum(rate(http_server_requests_seconds_bucket{application="$application", instance="$instance"}[1m])) by (le, uri))
 ```
 
-![extra metrics](../../assets/images/spring_boot/spring_boot_prometheus_grafana/grafana_extra_metrics.png)
+![extra metrics](../../assets/images/spring_boot/prometheus_grafana/grafana_extra_metrics.png)

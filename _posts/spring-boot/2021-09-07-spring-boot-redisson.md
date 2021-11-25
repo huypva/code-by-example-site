@@ -14,12 +14,15 @@ source: https://github.com/huypva/spring-boot-redisson-example
 > Hướng dẫn tích hợp Redis bằng Redisson client trong Spring Boot application
 
 - Sử dụng dependency
+
 ```xml
-        <dependency>
-			<groupId>org.redisson</groupId>
-			<artifactId>redisson-spring-boot-starter</artifactId>
-			<version>3.16.1</version>
-		</dependency>
+<dependencies>
+    <dependency>
+        <groupId>org.redisson</groupId>
+        <artifactId>redisson-spring-boot-starter</artifactId>
+        <version>3.16.1</version>
+    </dependency>
+</dependencies>
 ``` 
 
 Lưu ý: chọn version [redisson-spring-boot-starter](https://github.com/redisson/redisson/tree/master/redisson-spring-boot-starter) tương ứng version Spring Boot

@@ -19,6 +19,7 @@ Hướng dẫn giao tiếp database trong Spring Boot
 - Định nghĩa dependency trong pom.xml
 
 ```xml
+<dependencies>
     <!--spring mvc, rest-->
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -34,6 +35,7 @@ Hướng dẫn giao tiếp database trong Spring Boot
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
     </dependency>
+</dependencies>
 ```
 
 - Cấu hình datasource & jpa trong application.yml

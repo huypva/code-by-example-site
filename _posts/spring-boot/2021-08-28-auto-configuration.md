@@ -14,6 +14,7 @@ source: https://github.com/huypva/spring-boot-auto-configuration-example
 > Tạo lớp configuration và tự động load từ file trong Spring Boot
 
 - Thêm configuration trong file application.yml
+
 ```yml
 my-config:
     id: 1

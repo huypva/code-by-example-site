@@ -42,6 +42,7 @@ Cấu trúc thư mục như sau:
 - Thêm build trong file pom.xml
 
 ```xml
+<dependencies>
     <properties>
         <kr.motd.maven.version>1.5.0.Final</kr.motd.maven.version>
         <org.xolstice.maven.plugins.version>0.6.1</org.xolstice.maven.plugins.version>
@@ -93,11 +94,13 @@ Cấu trúc thư mục như sau:
 - Thêm dependency trong pom.xml
 
 ```xml
-		<dependency>
-			<groupId>net.devh</groupId>
-			<artifactId>grpc-spring-boot-starter</artifactId>
-			<version>2.12.0.RELEASE</version>
-		</dependency>
+<dependencies>
+    <dependency>
+        <groupId>net.devh</groupId>
+        <artifactId>grpc-spring-boot-starter</artifactId>
+        <version>2.12.0.RELEASE</version>
+    </dependency>
+</dependencies>
 ``` 
 
 - Thêm port gRPC trong file application.yml

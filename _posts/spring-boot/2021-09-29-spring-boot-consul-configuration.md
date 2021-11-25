@@ -79,11 +79,13 @@ Application name: spring-boot-consul
 - Thêm dependency [spring-cloud-starter-consul-config](https://cloud.spring.io/spring-cloud-consul/reference/html/)
 
 ```xml
+<dependencies>
     <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-consul-config</artifactId>
         <version>2.2.7.RELEASE</version>
     </dependency>
+</dependencies>
 ```
 
 - Tạo file bootstrap.yml

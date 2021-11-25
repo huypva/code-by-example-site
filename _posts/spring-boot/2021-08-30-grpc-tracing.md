@@ -48,6 +48,7 @@ Thư viện sử dụng:
 ## Server
 
 - Cấu hình OpenTracing trong application.properties
+
 ```properties
 opentracing.jaeger.service-name=...
 opentracing.jaeger.enabled=true

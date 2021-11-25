@@ -19,11 +19,12 @@ source: https://github.com/huypva/spring-boot-aop-example
 - Thêm dependency trong file pom.xml
 
 ```xml
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
-		</dependency>
-    
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+</dependencies>    
 ```
 
 - Tạo annotation

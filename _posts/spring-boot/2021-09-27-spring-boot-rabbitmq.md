@@ -19,11 +19,12 @@ source: https://github.com/huypva/spring-boot-rabbitmq-example
 - Thêm dependency trong file pom.xml
 
 ```xml
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-amqp</artifactId>
-		</dependency>
-    
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-amqp</artifactId>
+    </dependency>
+</dependencies>    
 ```
 
 - Thêm configuration sử dụng rabbitmq trong file application.yml

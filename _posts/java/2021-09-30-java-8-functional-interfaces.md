@@ -20,11 +20,13 @@ Functional Interface là các Interface có duy nhất một method trừu trư�
 Sử dụng Functional Interface thông qua Lambda Expressions
 
 - Dạng 1
+
 ```
 (args) -> {block code}
 ```
 
 - Dạng 2: dành cho `block code` chỉ có 1 dòng lệnh
+
 ```
 (args) -> code
 ```

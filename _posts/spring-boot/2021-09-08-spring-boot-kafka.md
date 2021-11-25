@@ -16,11 +16,14 @@ source: https://github.com/huypva/spring-boot-kafka-example
 ### Configuration
 
 - Thêm dependency trong pom.xml
+
 ```xml
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
-		</dependency>
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.kafka</groupId>
+        <artifactId>spring-kafka</artifactId>
+    </dependency>
+</dependencies>
 ``` 
 
 - Thêm cấu hình kafa trong file application.yml

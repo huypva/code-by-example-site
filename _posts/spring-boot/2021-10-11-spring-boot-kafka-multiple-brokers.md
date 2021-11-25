@@ -17,10 +17,12 @@ source: https://github.com/huypva/spring-boot-kafka-multiple-brokers-example
 
 - Thêm dependency trong pom.xml
 ```xml
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
-		</dependency>
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.kafka</groupId>
+        <artifactId>spring-kafka</artifactId>
+    </dependency>
+</dependencies>
 ``` 
 
 - Thêm cấu hình Kafka trong file application.yml, ở đây có 2 Kafka khác nhau

@@ -87,11 +87,13 @@ Output:
 - Thêm dependency `jackson-databind` trong pom.xml
 
 ```xml
+<dependencies>
     <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
         <version>2.12.5</version>
     </dependency>
+</dependencies>
 ```
 
 - Tạo và sử dụng thông qua class `ObjectMapper`

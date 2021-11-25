@@ -18,11 +18,13 @@ source: https://github.com/huypva/unit-test-mockito-example
 - Thêm dependency trong pom.xml để thực hiện UnitTest
 
 ```html
+<dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
+</dependencies>
 ```
 
 Trong Spring Boot version 2.2.6 đã có sẵn thư viện cho junit 5
@@ -76,7 +78,6 @@ public class MockStatic {
   public String doMockStatic() {
     return "Static: " + StaticClass.doStaticMethod(1);
   }
-
 }
 ```
 

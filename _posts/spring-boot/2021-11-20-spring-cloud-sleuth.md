@@ -62,9 +62,8 @@ source: https://github.com/huypva/spring-cloud-sleuth-example
     
 ```xml
 <properties>
-        <net.devh.grpc.starter.version>2.12.0.RELEASE</net.devh.grpc.starter.version>
+    <net.devh.grpc.starter.version>2.12.0.RELEASE</net.devh.grpc.starter.version>
 </properties>
-
 <dependencies>
     <dependency>
         <groupId>net.devh</groupId>
@@ -256,7 +255,6 @@ docker-compose up -d
 
 ```xml
 <dependencies>
-    ...
     <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-sleuth-zipkin</artifactId>

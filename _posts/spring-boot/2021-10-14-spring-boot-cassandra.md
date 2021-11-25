@@ -14,11 +14,14 @@ source: https://github.com/huypva/spring-boot-cassandra-example
 > Hướng dẫn tích hợp Cassandra trong Spring Boot application  
 
 - Thêm dependency trong pom.xml
+
 ```xml
+<dependencies>
     <dependency>
         <groupId>org.springframework.kafka</groupId>
         <artifactId>spring-boot-starter-data-cassandra</artifactId>
     </dependency>
+</dependencies>
 ```
 
 - Thêm cấu hình Cassandra trong file application.yml

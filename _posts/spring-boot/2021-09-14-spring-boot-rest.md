@@ -17,14 +17,18 @@ source: https://github.com/huypva/spring-boot-rest-example
 ### Configuration
 
 - Thêm dependency trong pom.xml
+
 ```xml
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+</dependencies>
 ``` 
 
 - Thêm cấu hình port listen cho server trong file application.yml
+
 ```yml
 server:
   port : 8082
@@ -33,6 +37,7 @@ server:
 ### Write controller
 
 - Viết class controller bằng cách sử dụng *RestController*
+
 ```java
 @RestController
 @RequestMapping("/api")
@@ -53,6 +58,7 @@ public class Controller {
 ### Mapping request
 
 - Tạo mapping lấy variable từ path của api
+
 ```java
   @GetMapping("/path-variable/{user_id}")
   public Greeting pathVariable(@PathVariable(name = "user_id") int userId) {
@@ -61,6 +67,7 @@ public class Controller {
 ```
 
 - Tạo api nhận request param
+
 ```java
   @GetMapping("/request-param")
   public Greeting requestParam(@RequestParam(name = "user_id") int userId) {
@@ -69,6 +76,7 @@ public class Controller {
 ```
 
 - Tạo post request
+
 ```java
   @PostMapping("/request-body")
   public Greeting requestBody(@RequestBody User user) {
@@ -83,15 +91,19 @@ public class Controller {
   + [spring-cloud-openfeign](https://spring.io/projects/spring-cloud-openfeign): a REST client for Spring Boot apps
 
 - Thêm dependency trong file pom.xml
+
 ```xml
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
-			<version>2.2.3.RELEASE</version>
-		</dependency>
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-openfeign</artifactId>
+        <version>2.2.3.RELEASE</version>
+    </dependency>
+</dependencies>
 ```
 
 - Cấu hình url, path trong file application.yml
+
 ```yml
 greeting-service:
   url: http://localhost:8082

@@ -16,7 +16,7 @@ source: https://github.com/huypva/spring-cloud-sleuth-example
 ## Example
 
 <div align="center">
-    <img src="../assets/images/spring_boot/sleuth_architecture.png"/>
+    <img src="../assets/images/spring_boot/sleuth_example.png"/>
 </div>
 
 - Trong ví dụ này bao gồm 3 service

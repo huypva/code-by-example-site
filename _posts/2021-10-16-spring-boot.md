@@ -39,3 +39,5 @@ layout: post
 # [Spring Boot Starter](../spring-boot/spring-boot-starter)
 
 # [Spring Cloud Sleuth](../spring-boot/spring-cloud-sleuth)
+
+# [Discovery Service with Consul](../spring-boot/spring-cloud-consul)

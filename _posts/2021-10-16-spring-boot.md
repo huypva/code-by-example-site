@@ -40,4 +40,4 @@ layout: post
 
 # [Spring Cloud Sleuth](../spring-boot/spring-cloud-sleuth)
 
-# [Discovery Service with Consul](../spring-boot/spring-cloud-consul)
+# [Discovery Service with Consul](../spring-boot/service-discovery-consul)

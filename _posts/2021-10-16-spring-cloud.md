@@ -7,7 +7,7 @@ layout: post
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot_icon.png"/>
+    <img src="../assets/images/spring_cloud/spring_cloud.png"/>
 </div>
 
 # [Configuration with Consul](../spring-cloud/spring-cloud-consul-configuration)

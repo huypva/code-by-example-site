@@ -16,7 +16,7 @@ source: https://github.com/huypva/spring-boot-service-discovery-consul-example
     - org.springframework.cloud:spring-cloud-starter-openfeign
     - org.springframework.cloud:spring-cloud-starter-consul-discovery
 
-## Kiến trúc
+## Kiến trúc demo
 
 <div align="center">
     <img src="../assets/images/spring_cloud/consul_example.png"/>

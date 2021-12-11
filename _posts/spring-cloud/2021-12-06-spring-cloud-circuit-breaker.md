@@ -9,9 +9,93 @@ source: https://github.com/huypva/spring-cloud-circuit-breaker-example
 
 > Hướng dẫn áp dụng Circuit Breaker bằng Resilience4j
 
+
 ## Thư viện sử dụng
 
-- Ý nghĩa các giá trị config
+- Spring Boot: version 2.4.11
+- Spring Cloud: version 2020.0.4
+    - org.springframework.cloud:spring-cloud-starter-openfeign
+    - org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j
+
+## Tạo client service-A
+
+- Thêm config cho OpenFeign client và Resilience4j
+
+```yaml
+serviceb:
+  url: http://localhost:8082
+  path:
+    greet: /greet/{id}
+feign:
+  client:
+    config:
+      serviceb:
+        connectTimeout: 3000
+        readTimeout: 3000
+resilience4j.circuitbreaker:
+  instances:
+    serviceB:
+      registerHealthIndicator: true
+      slidingWindowSize: 5
+      permittedNumberOfCallsInHalfOpenState: 3
+      slidingWindowType: COUNT_BASED
+      minimumNumberOfCalls: 5
+      waitDurationInOpenState: 10s
+      failureRateThreshold: 50
+```
+
+- Enable OpenFeign client
+
+```java
+@EnableFeignClients
+@SpringBootApplication
+public class ServiceAApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ServiceAApplication.class, args);
+	}
+
+}
+```
+
+- Tạo OpenFeign client và thêm `@CircuitBreaker`
+
+```java
+@FeignClient(value = "serviceb", url = "${serviceb.url}")
+public interface ServiceBClient {
+
+  @CircuitBreaker(name = "serviceB", fallbackMethod = "fallback")
+  @RequestMapping(method = RequestMethod.GET, value = "${serviceb.path.greet}")
+  public MessageB greet(@PathVariable(name = "id") int userId);
+
+  default MessageB fallback(Throwable throwable) {
+    return new MessageB("Fallback method");
+  }
+}
+```
+
+## Tạo server service-B đơn giản
+
+```java
+@RestController
+public class Controller {
+
+  @GetMapping("/greet/{id}")
+  public MessageB greet(@PathVariable(name = "id") int id) throws InterruptedException {
+    log.info("ServiceB.greet");
+    Thread.sleep(id);
+    return new MessageB("MessageB greet " + id);
+  }
+}
+```
+
+## Send request test 
+
+## Ý nghĩa các giá trị config
+
+![](../../assets/images/spring_cloud/circuit_breaker_state_machine.jpeg)
+
+  
     - registerHealthIndicator: true
     - failureRateThreshold: ngưỡng tỉ lệ lỗi, lớn hơn hoặc bằng ngưỡng này CircuitBreaker sẽ bật OPEN
     - slowCallDurationThreshold: khoảng thời gian 1 call được gọi là slow

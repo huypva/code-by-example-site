@@ -2,7 +2,7 @@
 title: Spring Boot - Service Discovery with Consul
 author: HuyPVA
 date: 2021-12-06
-category: Spring Boot
+category: spring-cloud
 layout: post
 source: https://github.com/huypva/spring-boot-service-discovery-consul-example
 ---
@@ -11,15 +11,15 @@ source: https://github.com/huypva/spring-boot-service-discovery-consul-example
 
 ## Thư viện sử dụng
 
-- SpringBoot: version 2.4.11
+- Spring Boot: version 2.4.11
 - Spring Cloud: version 2020.0.4
-- org.springframework.cloud:spring-cloud-starter-openfeign
-- org.springframework.cloud:spring-cloud-starter-consul-discovery
+    - org.springframework.cloud:spring-cloud-starter-openfeign
+    - org.springframework.cloud:spring-cloud-starter-consul-discovery
 
 ## Kiến trúc
 
 <div align="center">
-    <img src="../assets/images/spring_boot/consul_example.png"/>
+    <img src="../assets/images/spring_cloud/consul_example.png"/>
 </div>
 
 ## Cài đặt Consul service bằng docker-compose
@@ -52,7 +52,7 @@ $ docker-compose up -d
 - Truy cập Consul admin trên browser tại địa chỉ `http://localhost:8500/`
 
 <div align="center">
-    <img src="../assets/images/spring_boot/consul/start.png"/>
+    <img src="../assets/images/spring_cloud/start.png"/>
 </div>
 
 ## Tạo services

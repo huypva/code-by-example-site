@@ -2,13 +2,13 @@
 title: Spring Boot - Configuration with Consul
 author: HuyPVA
 date: 2021-09-27
-category: spring-boot
+category: spring-cloud
 layout: post
 source: https://github.com/huypva/spring-boot-rabbitmq-example
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot_icon.png"/>
+    <img src="../assets/images/spring_cloud/spring_cloud.png"/>
 </div>
 
 > Hướng dẫn sử dụng Consul configuration trong Spring Boot application
@@ -118,7 +118,7 @@ spring:
 
 Ở đây, ví dụ có thay đổi một số giá trị `value` trong config trên Consul để dễ kiểm tra
 
-![spring_boot_consul](../../assets/images/spring_boot/spring_boot_consul.png)
+![spring_boot_consul](../../assets/images/spring_cloud/consul_configuration.png)
 
 - Kết quả sau khi chạy chương trình
 

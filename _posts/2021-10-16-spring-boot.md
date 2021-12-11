@@ -30,14 +30,8 @@ layout: post
 
 # [RabbitMQ](../spring-boot/spring-boot-rabbitmq)
 
-# [Configuration with Consul](../spring-boot/spring-boot-consul-configuration)
-
 # [Kafka with multiple brokers](../spring-boot/spring-boot-kafka-multiple-brokers)
 
 # [Cassandra](../spring-boot/spring-boot-cassandra)
 
 # [Spring Boot Starter](../spring-boot/spring-boot-starter)
-
-# [Spring Cloud Sleuth](../spring-boot/spring-cloud-sleuth)
-
-# [Discovery Service with Consul](../spring-boot/service-discovery-consul)

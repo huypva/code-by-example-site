@@ -35,3 +35,5 @@ layout: post
 # [Cassandra](../spring-boot/spring-boot-cassandra)
 
 # [Spring Boot Starter](../spring-boot/spring-boot-starter)
+
+# [Ratelimit with Resilience4j](../spring-boot/spring-boot-rate-limit)

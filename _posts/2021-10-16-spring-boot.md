@@ -7,7 +7,7 @@ layout: post
 ---
 
 <div align="center">
-    <img src="../assets/images/spring_boot_icon.png"/>
+    <img src="../assets/images/spring_boot/spring_boot_icon.png"/>
 </div>
 
 # [Auto-Configuration](../spring-boot/auto-configuration)

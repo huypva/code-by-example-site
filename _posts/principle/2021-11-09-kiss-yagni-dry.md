@@ -25,6 +25,7 @@ layout: post
 - Bạn chỉ nên tập trung vào chức năng, yêu cầu hiện tại thay vì giải quyết cho một vấn đề chưa xảy ra, không chắc xảy ra trong tương lai.
 
 - 90% of features for the future are not used
+
 Nguồn: [extremeprogramming.org](http://www.extremeprogramming.org/rules/early.html)
 
 ## DRY Principle

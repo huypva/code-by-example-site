@@ -9,8 +9,8 @@ description: >
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://www.samplecode.xyz'
-#baseurl:          '/code-by-example-site'
+#url:              'https://www.samplecode.xyz'
+baseurl:          '/code-by-example-site'
 rss:              RSS
 
 toc:

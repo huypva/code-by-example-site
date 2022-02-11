@@ -93,7 +93,7 @@ public class Controller {
 
 ## Ý nghĩa các giá trị config
 
-![](../../assets/images/spring_cloud/circuit_breaker_state_machine.jpeg)
+![](../assets/images/spring_cloud/circuit_breaker_state_machine.jpeg)
 
   
     - registerHealthIndicator: true
@@ -110,5 +110,4 @@ public class Controller {
     - recordFailurePredicate: một custom Predicate để đánh giá lỗi hay khôn
 
 ## Reference
-
-- https://resilience4j.readme.io/docs/circuitbreaker
+- <https://resilience4j.readme.io/docs/circuitbreaker>

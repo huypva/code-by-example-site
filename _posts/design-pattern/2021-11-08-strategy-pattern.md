@@ -30,5 +30,5 @@ layout: post
 
 ## Reference
 
-- https://refactoring.guru/design-patterns/strategy
-- https://gpcoder.com/4796-huong-dan-java-design-pattern-strategy/
+- <https://refactoring.guru/design-patterns/strategy>
+- <https://gpcoder.com/4796-huong-dan-java-design-pattern-strategy/>

@@ -1,5 +1,5 @@
 ---
-title: Theory - Pessimistic vs Optimistic
+title: Design - Hexagonal
 author: HuyPVA
 date: 2021-10-18
 category: theory

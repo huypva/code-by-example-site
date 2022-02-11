@@ -30,4 +30,4 @@ layout: post
 
 ## Reference
 
-- https://www.cohesity.com/blogs/strict-vs-eventual-consistency/
+- <https://www.cohesity.com/blogs/strict-vs-eventual-consistency/>

@@ -44,8 +44,8 @@ layout: post
 
 ## Reference
 
-- https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking
-- https://martinfowler.com/eaaCatalog/optimisticOfflineLock.html
-- https://martinfowler.com/eaaCatalog/pessimisticOfflineLock.html
-- https://vladmihalcea.com/optimistic-vs-pessimistic-locking/
-- https://labs.flinters.vn/technote/optimistic-hay-pessimistic-locking/
+- <https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking>
+- <https://martinfowler.com/eaaCatalog/optimisticOfflineLock.html>
+- <https://martinfowler.com/eaaCatalog/pessimisticOfflineLock.html>
+- <https://vladmihalcea.com/optimistic-vs-pessimistic-locking/>
+- <https://labs.flinters.vn/technote/optimistic-hay-pessimistic-locking/>

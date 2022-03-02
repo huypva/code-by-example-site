@@ -20,44 +20,61 @@ Thư viện sử dụng:
 
 Định nghĩa dependency trong pom.xml
 ```xml
-    #server service only
-    <dependency>
-        <groupId>net.devh</groupId>
-        <artifactId>grpc-spring-boot-starter</artifactId>
-        <version>VERSION</version>
-    </dependency>
-    #client service only
-    <dependency>
-        <groupId>net.devh</groupId>
-        <artifactId>grpc-client-spring-boot-starter</artifactId>
-        <version>VERSION</version>
-    </dependency>
-    #both client and server
-    <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-grpc</artifactId>
-        <version>VERSION</version>
-    </dependency>
-    <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-spring-jaeger-cloud-starter</artifactId>
-        <version>VERSION</version>
-    </dependency>
+    <properties>
+        <com.google.api.grpc.version>1.18.0</com.google.api.grpc.version>
+        <com.google.protobuf.version>3.7.1</com.google.protobuf.version>
+        <grpc.springboot.starter.version>2.12.0.RELEASE</grpc.springboot.starter.version>
+
+        <io.grpc.version>1.37.0</io.grpc.version>
+
+        <kr.motd.maven.version>1.5.0.Final</kr.motd.maven.version>
+        <org.xolstice.maven.plugins.version>0.6.1</org.xolstice.maven.plugins.version>
+
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        #server service only
+        <dependency>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-spring-boot-starter</artifactId>
+            <version>${grpc.springboot.starter.version}</version>
+        </dependency>
+        #client service only
+        <dependency>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-client-spring-boot-starter</artifactId>
+            <version>${grpc.springboot.starter.version}</version>
+        </dependency>
+        #both client and server
+        <dependency>
+            <groupId>io.opentracing.contrib</groupId>
+            <artifactId>opentracing-grpc</artifactId>
+            <version>0.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>io.opentracing.contrib</groupId>
+            <artifactId>opentracing-spring-jaeger-cloud-starter</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+    </dependencies>
 ```
 
-## Server
+- Cấu hình OpenTracing trong application.yml
 
-- Cấu hình OpenTracing trong application.properties
-
-```properties
-opentracing.jaeger.service-name=...
-opentracing.jaeger.enabled=true
-opentracing.jaeger.udp-sender.host=localhost
-opentracing.jaeger.udp-sender.port=6831
-opentracing.jaeger.log-spans=true
-opentracing.jaeger.enable-b3-propagation=false
-opentracing.jaeger.probabilistic-sampler.sampling-rate=1.0
+```yaml
+opentracing.jaeger:
+  service-name: grpc-server
+  enabled: true
+  udp-sender:
+    host: localhost
+    port: 6831
+  log-spans: true
+  enable-b3-propagation: false
+  probabilistic-sampler:
+    sampling-rate: 1.0
 ``` 
+
+## Server
 
 - Tạo grpc Controler
 
@@ -75,7 +92,7 @@ public class GrpcController extends SimpleGrpc.SimpleImplBase {
 }
 ``` 
 
-- Tạo và intercept một `TracingServerInterceptor` vào GrpcControler thông qua annotation `GrpcGlobalServerInterceptor`
+- Tạo và intercept `TracingServerInterceptor` vào GrpcControler thông qua annotation `GrpcGlobalServerInterceptor`
 
 ```java
   @Autowired
